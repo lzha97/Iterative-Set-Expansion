@@ -29,15 +29,7 @@ def get_text_from_html(html):
 
 ##annotate and extract relevant tuples from a text file
 def annotate_kbp(file_name,relation,threshold):
-    if RELATION == "per:schools_attended":
-        entities = ["ORGANIZATION","PERSON"]
-    if RELATION == "per:employee_or_member_of":
-        entities = ["ORGANIZATION","PERSON"]
-    if RELATION == "per:cities_of_residence":
-        entities = ["PERSON","LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
-    if RELATION == "per:top_members_employees":
-        entities = ["ORGANIZATION","PERSON"]
-
+    places = ["LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
     tuples = []
 
     with open(file_name + ".txt", 'r') as f:
@@ -45,17 +37,26 @@ def annotate_kbp(file_name,relation,threshold):
 
     annotators_ner = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner']
     annotators_kbp = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'depparse', 'coref', 'kbp']
-
+    
     with CoreNLPClient(timeout=300000, memory = '4G',be_quiet=False) as pipeline:
         ann_ner = pipeline.annotate(text,annotators = annotators_ner)
         qualifying_sentences = []
         for s in ann_ner.sentence:
             sentence_string = ""
-            #is_person = False
+            has_person == False
+            has_org == False
+            has_place == False
             for word in s.token:
-                if word.ner in entities:
-                    entities.remove(word.ner)
-            if (entities == []) or ((RELATION == "per:cities_of_residence") and (len(entities)<4) and ("PERSON" not in entities)):
+                if word.ner == "PERSON":
+                    has_person = True
+                if word.ner == "ORGANIZATION":
+                    has_org = True
+                if word.ner in places:
+                    has_place == True
+            if RELATION == "per:cities_of_residence" and has_person and has_place:
+                for word in s.token:
+                    sentence_string = sentence_string + " " + word.word
+            else if has_person and has_org:
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
