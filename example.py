@@ -37,4 +37,4 @@ def annotate_kbp(file_name,relation,threshold):
                         tuples.append((kbp_triple.subject,kbp_triple.relation,kbp_triple.object))
     return tuples
 
-annotate_kbp("example","per:employee_or_member_of",0.7)
+print(annotate_kbp("example","per:employee_or_member_of",0.7))
