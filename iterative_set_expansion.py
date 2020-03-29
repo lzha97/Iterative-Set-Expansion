@@ -113,7 +113,7 @@ for idx, val in enumerate(results):
             file.write(plain_text)
         print(len(plain_text))
         print()
-    if idx == 1:
+    if idx == 2:
         new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
         for tup in new_tuples:
             X.append(tup)
