@@ -37,7 +37,7 @@ def annotate_kbp(file_name,relation,threshold):
 
     annotators_ner = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner']
     annotators_kbp = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'depparse', 'coref', 'kbp']
-    
+
     with CoreNLPClient(timeout=300000, memory = '4G',be_quiet=False) as pipeline:
         ann_ner = pipeline.annotate(text,annotators = annotators_ner)
         qualifying_sentences = []
@@ -56,7 +56,7 @@ def annotate_kbp(file_name,relation,threshold):
             if RELATION == "per:cities_of_residence" and has_person and has_place:
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
-            else if has_person and has_org:
+            elif has_person and has_org:
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
