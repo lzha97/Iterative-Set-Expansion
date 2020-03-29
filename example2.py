@@ -48,4 +48,4 @@ def annotate_kbp(plain_text):
                     print(f"\t Confidence: {kbp_triple.confidence};\t Subject: {kbp_triple.subject};\t Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
         """
 
-annotate_kbp("8")
+annotate_kbp("6")
