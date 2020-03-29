@@ -55,7 +55,7 @@ def annotate_kbp(file_name,relation,threshold):
             for word in s.token:
                 if word.ner in entities:
                     entities.remove(world.ner)
-            if (entities == []) or ((RELATION == "per:cities_of_residence") and (len(entities)<4) and ("PERSON" not in entities):
+            if (entities == []) or ((RELATION == "per:cities_of_residence") and (len(entities)<4) and ("PERSON" not in entities)):
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
