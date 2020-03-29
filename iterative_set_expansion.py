@@ -29,6 +29,15 @@ def get_text_from_html(html):
 
 ##annotate and extract relevant tuples from a text file
 def annotate_kbp(file_name,relation,threshold):
+    if RELATION == "per:schools_attended":
+        entities = ["ORGANIZATION","PERSON"]
+    if RELATION == "per:employee_or_member_of":
+        entities = ["ORGANIZATION","PERSON"]
+    if RELATION == "per:cities_of_residence":
+        entities = ["LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
+    if RELATION == "per:top_members_employees":
+        entities = ["ORGANIZATION","PERSON"]
+
     tuples = []
 
     with open(file_name + ".txt", 'r') as f:
@@ -37,16 +46,16 @@ def annotate_kbp(file_name,relation,threshold):
     annotators_ner = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner']
     annotators_kbp = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'depparse', 'coref', 'kbp']
 
-    with CoreNLPClient(timeout=20000, memory = '4G',be_quiet=False) as pipeline:
+    with CoreNLPClient(timeout=300000, memory = '4G',be_quiet=False) as pipeline:
         ann_ner = pipeline.annotate(text,annotators = annotators_ner)
         qualifying_sentences = []
         for s in ann_ner.sentence:
             sentence_string = ""
-            is_person = False
+            #is_person = False
             for word in s.token:
-                if word.ner == "PERSON":
-                    is_person = True
-            if is_person == True:
+                if entities.contains(word.ner):
+                    entities.remove(world.ner)
+            if (entities == []) or (RELATION == "per:cities_of_residence" and len(entities)<4):
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
@@ -60,6 +69,7 @@ def annotate_kbp(file_name,relation,threshold):
                     if kbp_triple.relation == relation and kbp_triple.confidence >= threshold:
                         tuples.append((kbp_triple.subject,kbp_triple.relation,kbp_triple.object))
     return tuples
+
 
 ### Get Input
 G_API_KEY = sys.argv[1]
@@ -113,11 +123,11 @@ for idx, val in enumerate(results):
             file.write(plain_text)
         print(len(plain_text))
         print()
-    if idx == 3:
-        new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
-        for tup in new_tuples:
-            X.append(tup)
-    print(X)
+
+    new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
+    for tup in new_tuples:
+        X.append(tup)
+print(X)
 
 
 #webpages are saved by index in files <index>.txt
