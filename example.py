@@ -32,9 +32,9 @@ def annotate_kbp(file_name,relation,threshold):
             ann_kbp = pipeline.annotate(sentence, annotators = annotators_kbp)
             for sentence in ann_kbp.sentence:
                 for kbp_triple in sentence.kbpTriple:
-                    print(f"\t Confidence: {kbp_triple.confidence};\t Subject: {kbp_triple.subject};\t Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
+                    #print(f"\t Confidence: {kbp_triple.confidence};\t Subject: {kbp_triple.subject};\t Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
                     if kbp_triple.relation == relation and kbp_triple.confidence >= threshold:
                         tuples.append((kbp_triple.subject,kbp_triple.relation,kbp_triple.object))
     return tuples
 
-annotate_kbp("example","per:exmployee_or_member_of",0.7)
+annotate_kbp("example","per:employee_or_member_of",0.7)
