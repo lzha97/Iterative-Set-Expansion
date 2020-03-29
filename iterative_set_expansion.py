@@ -113,9 +113,10 @@ for idx, val in enumerate(results):
             file.write(plain_text)
         print(len(plain_text))
         print()
-    new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
-    for tup in new_tuples:
-        X.append(tup)
+    if idx == 1:
+        new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
+        for tup in new_tuples:
+            X.append(tup)
     print(X)
 
 
