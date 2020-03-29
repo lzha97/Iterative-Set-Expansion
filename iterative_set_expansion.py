@@ -67,6 +67,7 @@ G_ENGINE_ID = sys.argv[2]
 RELATION = float(sys.argv[3]) # 1 for Schools_Attended, 2 for Work_For, 3 for Live_In, 4 for Top_Member_Employees
 THRESHOLD = float(sys.argv[4]) # extraction confidence threshold
 QUERY = sys.argv[5] # seed query for relation to extract
+print(QUERY)
 K = float(sys.argv[6]) # number of tuples requested in output
 
 if not (1 <= RELATION <= 4 and RELATION.is_integer()):
