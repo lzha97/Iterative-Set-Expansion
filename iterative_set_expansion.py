@@ -43,9 +43,9 @@ def annotate_kbp(file_name,relation,threshold):
         qualifying_sentences = []
         for s in ann_ner.sentence:
             sentence_string = ""
-            has_person == False
-            has_org == False
-            has_place == False
+            has_person = False
+            has_org = False
+            has_place = False
             for word in s.token:
                 if word.ner == "PERSON":
                     has_person = True
