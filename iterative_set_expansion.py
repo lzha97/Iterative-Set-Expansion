@@ -37,7 +37,7 @@ def annotate_kbp(file_name,relation,threshold):
     annotators_ner = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner']
     annotators_kbp = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'depparse', 'coref', 'kbp']
 
-    with CoreNLPClient(timeout=10000, memory = '4G',be_quiet=True) as pipeline:
+    with CoreNLPClient(timeout=20000, memory = '4G',be_quiet=True) as pipeline:
         ann_ner = pipeline.annotate(text,annotators = annotators_ner)
         qualifying_sentences = []
         for s in ann_ner.sentence:
