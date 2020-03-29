@@ -25,7 +25,7 @@ def annotate_kbp(plain_text):
     annotators_ner = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner']
     annotators_kbp = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'depparse', 'coref', 'kbp']
 
-    with CoreNLPClient(timeout=10000, memory = '4G',be_quiet=False) as pipeline:
+    with CoreNLPClient(timeout=10000, memory = '4G',be_quiet=True) as pipeline:
         ann_ner = pipeline.annotate(text,annotators = annotators_ner)
         qualifying_sentences = []
         for s in ann_ner.sentence:
@@ -39,14 +39,17 @@ def annotate_kbp(plain_text):
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
                 qualifying_sentences.append(sentence_string)
-            print("qualifying sentences: ")
-            print(qualifying_sentences)
-            print(len(qualifying_sentences))
+        print("qualifying sentences: ")
+        print(qualifying_sentences)
+        print(len(qualifying_sentences))
 
         for sentence in qualifying_sentences:
             ann_kbp = pipeline.annotate(sentence, annotators = annotators_kbp)
             for sentence in ann_kbp.sentence:
+                print("in here")
+                print(sentence)
                 for kbp_triple in sentence.kbpTriple:
+                    print("has a tuple")
                     print(f"\t Confidence: {kbp_triple.confidence};\t Subject: {kbp_triple.subject};\t Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
 
 annotate_kbp("6")
