@@ -127,7 +127,8 @@ for idx, val in enumerate(results):
 
     new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
     for tup in new_tuples:
-        X.append(tup)
+        if tup not in X:
+            X.append(tup)
 print(X)
 
 
