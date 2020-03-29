@@ -34,7 +34,7 @@ def annotate_kbp(file_name,relation,threshold):
     if RELATION == "per:employee_or_member_of":
         entities = ["ORGANIZATION","PERSON"]
     if RELATION == "per:cities_of_residence":
-        entities = ["LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
+        entities = ["PERSON","LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
     if RELATION == "per:top_members_employees":
         entities = ["ORGANIZATION","PERSON"]
 
@@ -53,9 +53,9 @@ def annotate_kbp(file_name,relation,threshold):
             sentence_string = ""
             #is_person = False
             for word in s.token:
-                if entities.contains(word.ner):
+                if word.ner in entities:
                     entities.remove(world.ner)
-            if (entities == []) or (RELATION == "per:cities_of_residence" and len(entities)<4):
+            if (entities == []) or ((RELATION == "per:cities_of_residence") and (len(entities)<4) and ("PERSON" not in entities):
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
