@@ -121,7 +121,6 @@ for idx in ["0","1","2","3","4","5","6","7","8","9"]:
     new_tuples = annotate_kbp(idx,RELATION,THRESHOLD)
     for tup in new_tuples:
         X.append(tup)
-    break
 print(X)
 
 #webpages are saved by index in files <index>.txt
