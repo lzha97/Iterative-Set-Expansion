@@ -80,13 +80,13 @@ if not (K > 0 and K.is_integer()):
     print('Incorrect value for K. \nUsage: python3 iterative_set_expansion.py <api-key> <engine-id> <relation> <threshold> <"query"> <k>')
     sys.exit()
 
-if RELATION == "Schools_Attended":
+if RELATION == 1:
     RELATION = "per:schools_attended"
-if RELATION == "Work_For":
+if RELATION == 2:
     RELATION = "per:employee_or_member_of"
-if RELATION == "Live_In":
+if RELATION == 3:
     RELATION = "per:cities_of_residence"
-if RELATION == "Top_Member_Employees":
+if RELATION == 4:
     RELATION = "per:top_members_employees"
 
 
