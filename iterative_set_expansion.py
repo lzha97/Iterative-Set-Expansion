@@ -100,7 +100,7 @@ if response.status_code == 200:
     results = response.json()['items']
 
 
-
+X = []
 print('RESULTS:')
 for idx, val in enumerate(results):
     print(str(idx+1)+':', val['title'])
@@ -113,14 +113,10 @@ for idx, val in enumerate(results):
             file.write(plain_text)
         print(len(plain_text))
         print()
-
-
-### iterate through text files and add tuples to X
-X = []
-for idx in ["0","1","2","3","4","5","6","7","8","9"]:
-    new_tuples = annotate_kbp(idx,RELATION,THRESHOLD)
+    new_tuples = annotate_kbp(str(idx),RELATION,THRESHOLD)
     for tup in new_tuples:
         X.append(tup)
-print(X)
+    print(X)
+
 
 #webpages are saved by index in files <index>.txt
