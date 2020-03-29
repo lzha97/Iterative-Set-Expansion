@@ -62,12 +62,12 @@ def annotate_kbp(file_name,relation,threshold):
     return tuples
 
 ### Get Input
-G_API_KEY = sys.argv[0]
-G_ENGINE_ID = sys.argv[1]
-RELATION = float(sys.argv[2]) # 1 for Schools_Attended, 2 for Work_For, 3 for Live_In, 4 for Top_Member_Employees
-THRESHOLD = float(sys.argv[3]) # extraction confidence threshold
-QUERY = sys.argv[4] # seed query for relation to extract
-K = float(sys.argv[5]) # number of tuples requested in output
+G_API_KEY = sys.argv[1]
+G_ENGINE_ID = sys.argv[2]
+RELATION = float(sys.argv[3]) # 1 for Schools_Attended, 2 for Work_For, 3 for Live_In, 4 for Top_Member_Employees
+THRESHOLD = float(sys.argv[4]) # extraction confidence threshold
+QUERY = sys.argv[5] # seed query for relation to extract
+K = float(sys.argv[6]) # number of tuples requested in output
 
 if not (1 <= RELATION <= 4 and RELATION.is_integer()):
     print('Incorrect value for R (Relation). \nUsage: python3 iterative_set_expansion.py <api-key> <engine-id> <relation> <threshold> <"query"> <k>')
