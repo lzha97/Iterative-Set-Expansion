@@ -18,7 +18,7 @@ def annotate_kbp(plain_text):
 
     #text = "Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people."
 
-    text = "Joe Smith was born in Oregon. Joe works for Microsoft. He gave him a high-five."
+    #text = "Joe Smith was born in Oregon. Joe works for Microsoft. He gave him a high-five."
     print('---')
     print('starting up Java Stanford CoreNLP Server...')
 
@@ -53,4 +53,4 @@ def annotate_kbp(plain_text):
                     print("has a tuple")
                     print(f"\t Confidence: {kbp_triple.confidence};\t Subject: {kbp_triple.subject};\t Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
 
-annotate_kbp("6")
+annotate_kbp("example")
