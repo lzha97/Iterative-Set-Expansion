@@ -15,7 +15,9 @@ def annotate_kbp(plain_text):
     with open(plain_text+".txt", 'r') as f:
         text = f.read()
 
-    #text = "Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people."
+    text = "Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people."
+
+    #text = "Joe Smith was born in Oregon. Joe works for Microsoft. He gave him a high-five."
     print('---')
     print('starting up Java Stanford CoreNLP Server...')
 
@@ -40,12 +42,11 @@ def annotate_kbp(plain_text):
             print("qualifying sentences: ")
             print(qualifying_sentences)
             print(len(qualifying_sentences))
-        """
+
         for sentence in qualifying_sentences:
             ann_kbp = pipeline.annotate(sentence, annotators = annotators_kbp)
             for sentence in ann_kbp.sentence:
                 for kbp_triple in sentence.kbpTriple:
                     print(f"\t Confidence: {kbp_triple.confidence};\t Subject: {kbp_triple.subject};\t Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
-        """
 
 annotate_kbp("6")
