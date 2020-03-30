@@ -125,16 +125,29 @@ def annotate_kbp(file_name, relation, threshold):
 def ise():
     iteration = 0
     results = make_request(G_API_KEY, G_ENGINE_ID, query)
+
     
     X = dict()
     queried = set() 
     fstart = time.time()
+
+    urls = ['https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html',
+            'https://www.cnbc.com/2020/03/13/bill-gates-leaves-microsoft-board.html',
+            'https://www.theverge.com/2020/3/13/21179214/bill-gates-steps-down-microsoft-board-philanthropy',
+            'https://techcrunch.com/2020/03/13/bill-gates-leaves-microsofts-board/',
+            'https://www.wired.com/story/bill-gates-steps-down-microsoft-board/',
+            'https://en.wikipedia.org/wiki/Bill_Gates',
+            
+
+
+    ]
     while len(X) < K: 
         transcript('=========== Iteration: ' + str(iteration) + ' - Query: ' + query + ' =========== ')
         for idx, val in enumerate(results):
             relct = 0
-            transcript('URL (' + str(idx+1)+' / 10): '+ val['link'])
-            r = requests.get(val['link'])
+            url = val['link']
+            transcript('URL (' + str(idx+1)+' / 10): '+ url)
+            r = requests.get(url)
             if r.status_code == 200:
                 plain_text = get_text_from_html(r.content)[:20000]
                 transcript('\tWebpage length (num characters): ' + str(len(plain_text)))
