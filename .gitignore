@@ -1,2 +1,6 @@
 keys
 *.txt
+*.props 
+example*
+printtest.py
+*.log
