@@ -14,8 +14,8 @@ import time
 
 FILETIME = str(time.time())
 
-def transcript(string): 
-    with open(FILETIME + '.log', 'a+') as f: 
+def transcript(string):
+    with open(FILETIME + '.log', 'a+') as f:
         print(string)
         f.write(string+'\n')
 
@@ -38,7 +38,7 @@ def get_text_from_html(html):
 
 ### Make Request to Custom Search API
 def make_request(G_API_KEY, G_ENGINE_ID, query):
-   
+
     base_url = "https://www.googleapis.com/customsearch/v1"
     payload = {'key': G_API_KEY, 'cx': G_ENGINE_ID, 'q':query, 'alt': 'json'}
     headers={'Accept': 'application/json'}
@@ -63,16 +63,15 @@ def annotate_kbp(file_name, relation, threshold):
     with CoreNLPClient(timeout=300000, memory = '4G',be_quiet=True) as pipeline:
         ann_ner = pipeline.annotate(text,annotators = annotators_ner)
         transcript('\tAnnotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...')
+        num_sentences = len(ann_ner.sentences)
+        transcript('\tExtracted '+str(num_sentences)+' sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...')
 
-
-        #TODO: transcript('\tExtracted 39 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...')
-        
-        
         qualifying_sentences = []
+        #ct_processed = 0
         for s in ann_ner.sentence:
-
-            #TODO: transcript ('\tProcessed 25 / 39 sentences') ##Note: it's every 5 sentences and final number if not divisible by 5? 
-             
+            #ct_processed += 1
+            #if ct_processed % 5 == 0:
+                #transcript('\tProcessed '+ str(ct_processed)+' / '+str(num_sentences))
             sentence_string = ""
             has_person = False
             has_org = False
@@ -91,44 +90,53 @@ def annotate_kbp(file_name, relation, threshold):
                 for word in s.token:
                     sentence_string = sentence_string + " " + word.word
             if sentence_string != "":
-                qualifying_sentences.append(sentence_string)
-      
-        
-        ct = 0
-        for sent in qualifying_sentences:
-            ann_kbp = pipeline.annotate(sent, annotators = annotators_kbp)
+                qualifying_sentences.append((sentence_string,ct_processed))
+        #transcript('\tProcessed '+ str(ct_processed)+' / '+str(num_sentences))
 
-            ## TODO: transcript('\tExtracted kbp annotations for 17 out of total 39 sentences') 
+        ct = 0
+        sent_with_kbp = 0
+        for sent in qualifying_sentences:
+            ann_kbp = pipeline.annotate(sent[0], annotators = annotators_kbp)
+            ## TODO: transcript('\tExtracted kbp annotations for 17 out of total 39 sentences')
 
             for sentence in ann_kbp.sentence:
+                if sent[1] == num_sentences:
+                    transcript('\tProcessed '+ str(sent[1])+' / '+str(num_sentences))
+                else:
+                    for i in range(ct+1,sent[1]+1,5):
+                        transcript('\tProcessed '+ str(i)+' / '+str(num_sentences))
                 for kbp_triple in sentence.kbpTriple:
+                    sent_with_kbp += 1
                     transcript('\t\t=== Extracted Relation ===')
                     transcript('\t\tSentence: '+ str(sent))
                     transcript(f"\t\tConfidence: {kbp_triple.confidence}; Subject: {kbp_triple.subject}; Relation: {kbp_triple.relation}; Object: {kbp_triple.object}")
-                    if kbp_triple.relation == relation: 
-                        ct +=1 
+                    if kbp_triple.relation == relation:
+                        ct +=1
                         if kbp_triple.confidence >= threshold:
                             tup = (kbp_triple.subject,kbp_triple.relation,kbp_triple.object)
                             if tup not in tuples:
                                 tuples[tup] = kbp_triple.confidence
                                 transcript('\t\tAdding to set of extracted relations')
-                            elif kbp_triple.confidence > tuples[tup]: 
+                            elif kbp_triple.confidence > tuples[tup]:
                                 tuples[tup] = kbp_triple.confidence
                                 transcript('\t\tThe same relation is already present but with a lower confidence. Just updating the confident value.')
-   
+
                         else: transcript('\t\tConfidence is lower than threshold confidence. Ignoring this.')
-                        transcript('\t\t==========================\n')                
+                        transcript('\t\t==========================\n')
+
+        transcript('/tExtracted kbp annotations for '+str(sent_with_kbp)+ ' out of total '+str(num_sentences)+' sentences')
+
     return tuples, ct
 
 
-### iterative set expansion 
+### iterative set expansion
 def ise():
     iteration = 0
     results = make_request(G_API_KEY, G_ENGINE_ID, query)
-
     
+
     X = dict()
-    queried = set() 
+    queried = set()
     fstart = time.time()
 
     urls = ['https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html',
@@ -141,7 +149,8 @@ def ise():
             'https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/',
             'https://www.cnn.com/2020/03/13/business/bill-gates-microsoft-berkshire-boards/index.html',
             'https://arstechnica.com/information-technology/2020/03/bill-gates-steps-down-from-microsoft-board/']
-    while len(X) < K: 
+
+    while len(X) < K:
         transcript('=========== Iteration: ' + str(iteration) + ' - Query: ' + query + ' =========== ')
         for idx, val in enumerate(results):
             relct = 0
@@ -154,7 +163,7 @@ def ise():
                 transcript('\tWebpage length (num characters): ' + str(len(plain_text)))
                 with open(str(idx)+'.txt', 'w+') as file:
                     file.write(plain_text)
-              
+
             new_tuples, num_rel = annotate_kbp(str(idx),RELATION,THRESHOLD)
             for tup in new_tuples:
                 if tup not in X or X[tup] < new_tuples[tup]:
@@ -163,25 +172,25 @@ def ise():
             transcript('\tRelations extracted from this website: '  +  str(relct) +  '  (Overall: ' +  str(num_rel)+')')
 
         X = {k:v for k, v in sorted(X.items(), key=lambda item: item[1], reverse=True)}
-        
 
-        if len(X) >= K: 
+
+        if len(X) >= K:
             #topK = list(X.keys())[:int(K)]
             #res_X = dict()
-            #for x in X: 
+            #for x in X:
             #    if x in topK: res_X[x] = X[x]
             return X
-        
-        else: 
+
+        else:
             Y = None
-            for y in X: 
-                if y not in queried: 
+            for y in X:
+                if y not in queried:
                     queried.add(y)
-                    Y = y 
+                    Y = y
                     break
-            if not Y: 
+            if not Y:
                 transcript('ISE has "stalled" before retrieving k high-confidence tuples')
-                return 
+                return
             new_query = Y[0] + ' ' + Y[1] + ' ' + Y[2]
             results = make_request(G_API_KEY, G_ENGINE_ID, new_query)
         iteration +=1
@@ -217,10 +226,10 @@ start = time.time()
 X = ise()
 end = time.time()
 transcript('\n\n================== ALL RELATIONS (' + str(len(X)) + ') ==================')
-for x in X: 
+for x in X:
     conf = X[x]
     sub = x[0]
-    rel = x[1] 
+    rel = x[1]
     obj = x[2]
     transcript("Confidence: " + "{:.4f}".format(conf) + "  | Subject: " + "{:<15}".format(sub) + '   | Relation: ' + "{:<15} ".format(rel) + '   | Object: ' + '{:<15}'.format(obj))
 transcript('Total Time: ' + str((end-start)/60))
