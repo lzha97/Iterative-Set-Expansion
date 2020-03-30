@@ -137,15 +137,16 @@ def ise():
             'https://techcrunch.com/2020/03/13/bill-gates-leaves-microsofts-board/',
             'https://www.wired.com/story/bill-gates-steps-down-microsoft-board/',
             'https://en.wikipedia.org/wiki/Bill_Gates',
-            
-
-
-    ]
+            'https://www.bbc.com/news/business-51883377',
+            'https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/',
+            'https://www.cnn.com/2020/03/13/business/bill-gates-microsoft-berkshire-boards/index.html',
+            'https://arstechnica.com/information-technology/2020/03/bill-gates-steps-down-from-microsoft-board/']
     while len(X) < K: 
         transcript('=========== Iteration: ' + str(iteration) + ' - Query: ' + query + ' =========== ')
         for idx, val in enumerate(results):
             relct = 0
             url = val['link']
+            url = urls[idx]
             transcript('URL (' + str(idx+1)+' / 10): '+ url)
             r = requests.get(url)
             if r.status_code == 200:
