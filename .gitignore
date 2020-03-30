@@ -3,4 +3,4 @@ keys
 *.props 
 example*
 printtest.py
-*.log
+*.gz

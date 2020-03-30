@@ -1,0 +1,1506 @@
+----
+Parameters:
+Client key	= -----------------------------
+Engine key	= -----------------------------
+Relation	= org:top_members_employees
+Threshold	= 0.7
+Query		= bill gates microsoft
+# of Tuples	= 10.0
+
+Loading necessary libraries; This should take a minute or so ... 
+=========== Iteration: 0 - Query: bill gates microsoft =========== 
+URL (1 / 10): https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html
+	Fetching text from url ...
+	Webpage length (num characters): 5479
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 40 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 40
+		=== Extracted Relation ===
+		Sentence:  Sections SEARCH Skip to content Skip to site index Technology Log In Today 's Paper Technology | Bill Gates Stepping Down From Microsoft 's Board https://nyti.ms/2IMR65G Advertisement Continue reading the main story Supported by Continue reading the main story Bill Gates Stepping Down From Microsoft 's Board Mr. Gates , who founded the company with Paul Allen four decades ago , will also step down from the board of Berkshire Hathaway .
+		Confidence: 0.5580606690970293; Subject: Berkshire Hathaway; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Sections SEARCH Skip to content Skip to site index Technology Log In Today 's Paper Technology | Bill Gates Stepping Down From Microsoft 's Board https://nyti.ms/2IMR65G Advertisement Continue reading the main story Supported by Continue reading the main story Bill Gates Stepping Down From Microsoft 's Board Mr. Gates , who founded the company with Paul Allen four decades ago , will also step down from the board of Berkshire Hathaway .
+		Confidence: 0.7034315090270818; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 3 / 40
+		=== Extracted Relation ===
+		Sentence:  Credit ... Calla Kessler/The New York Times By Daisuke Wakabayashi and Steve Lohr Published March 13 , 2020 Updated March 15 , 2020 SAN FRANCISCO -- Bill Gates is stepping down from the board of Microsoft , the software giant he helped found more than four decades ago .
+		Confidence: 0.5011827967787242; Subject: Microsoft; Relation: org:top_members_employees; Object: Steve Lohr
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Credit ... Calla Kessler/The New York Times By Daisuke Wakabayashi and Steve Lohr Published March 13 , 2020 Updated March 15 , 2020 SAN FRANCISCO -- Bill Gates is stepping down from the board of Microsoft , the software giant he helped found more than four decades ago .
+		Confidence: 0.6862448264038822; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 4 / 40
+		=== Extracted Relation ===
+		Sentence:  Mr. Gates said on Friday that he would also step down from the board of Berkshire Hathaway , the conglomerate run by his close friend , Warren E. Buffett .
+		Confidence: 0.6598231571180754; Subject: Berkshire Hathaway; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Mr. Gates said on Friday that he would also step down from the board of Berkshire Hathaway , the conglomerate run by his close friend , Warren E. Buffett .
+		Confidence: 0.6771054533213963; Subject: Berkshire Hathaway; Relation: org:top_members_employees; Object: his
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 5 / 40
+	Processed 6 / 40
+	Processed 8 / 40
+	Processed 9 / 40
+		=== Extracted Relation ===
+		Sentence:  Mr. Gates has slowly been stepping back from Microsoft in recent years .
+		Confidence: 0.521322507074311; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 12 / 40
+	Processed 15 / 40
+		=== Extracted Relation ===
+		Sentence:  He said he would remain active at the company and would work closely with Satya Nadella , Microsoft 's chief executive .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+	Processed 16 / 40
+	Processed 21 / 40
+	Processed 22 / 40
+	Processed 23 / 40
+		=== Extracted Relation ===
+		Sentence:  The conglomerate has nominated Kenneth Chenault , the former chief executive of American Express , to replace Mr. Gates on the board .
+		Confidence: 1.0; Subject: American Express; Relation: org:top_members_employees; Object: Kenneth Chenault
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  The conglomerate has nominated Kenneth Chenault , the former chief executive of American Express , to replace Mr. Gates on the board .
+		Confidence: 0.9019564708990104; Subject: American Express; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 24 / 40
+		=== Extracted Relation ===
+		Sentence:  Daniel Ives , managing director of equity research at Wedbush Securities , said in a research note that Mr. Gates 's stepping down from the Microsoft board was not a surprise and that it was a vote of confidence for Mr. Nadella and the direction of the company .
+		Confidence: 0.6284273513898726; Subject: Microsoft; Relation: org:top_members_employees; Object: Daniel Ives
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Daniel Ives , managing director of equity research at Wedbush Securities , said in a research note that Mr. Gates 's stepping down from the Microsoft board was not a surprise and that it was a vote of confidence for Mr. Nadella and the direction of the company .
+		Confidence: 1.0; Subject: Wedbush Securities; Relation: org:top_members_employees; Object: Daniel Ives
+		Adding to set of extracted relations
+		==========================
+
+	Processed 25 / 40
+	Processed 29 / 40
+	Extracted kbp annotations for 12 out of total 40 sentences
+	Relations extracted from this website: 5  (Overall: 12)
+URL (2 / 10): https://www.cnbc.com/2020/03/13/bill-gates-leaves-microsoft-board.html
+	Fetching text from url ...
+	Webpage length (num characters): 5738
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 31 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 31
+	Processed 2 / 31
+	Processed 3 / 31
+	Processed 4 / 31
+		=== Extracted Relation ===
+		Sentence:  VIDEO 4:05 04:05 Bill Gates steps down from Microsoft board Fast Money Microsoft announced on Friday that Bill Gates is leaving the board , effective Friday .
+		Confidence: 0.8972841080740984; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 6 / 31
+	Processed 8 / 31
+	Processed 9 / 31
+	Processed 11 / 31
+	Processed 13 / 31
+		=== Extracted Relation ===
+		Sentence:  Microsoft 's current CEO , Satya Nadella , took over in 2014 .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+	Processed 14 / 31
+		=== Extracted Relation ===
+		Sentence:  Gates was director of the board at Microsoft until 2014 but began dedicating more of his time to the Bill & Melinda Gates Foundation in 2008 .
+		Confidence: 0.8637837114879533; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates was director of the board at Microsoft until 2014 but began dedicating more of his time to the Bill & Melinda Gates Foundation in 2008 .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 15 / 31
+	Processed 18 / 31
+		=== Extracted Relation ===
+		Sentence:  `` It 's been a tremendous honor and privilege to have worked with and learned from Bill over the years , '' said Microsoft CEO Satya Nadella .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		==========================
+
+	Processed 22 / 31
+	Processed 24 / 31
+	Extracted kbp annotations for 5 out of total 31 sentences
+	Relations extracted from this website: 3  (Overall: 5)
+URL (3 / 10): https://www.theverge.com/2020/3/13/21179214/bill-gates-steps-down-microsoft-board-philanthropy
+	Fetching text from url ...
+	Webpage length (num characters): 9226
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 20 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 20
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7711048192147224; Subject: Linkedin Reddit; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7163324891774111; Subject: Microsoft Tech; Relation: org:top_members_employees; Object: Saeed Adyani
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.4250360491972335; Subject: Facebook Share; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.3912655707383697; Subject: Linkedin Reddit; Relation: org:top_members_employees; Object: Chaim Gartenberg
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5087681322269361; Subject: Facebook Share; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.9054536918591061; Subject: Netflix; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.9364789594249071; Subject: Microsoft Tech; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.656231432628919; Subject: Netflix; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5095107355221159; Subject: Netflix; Relation: org:top_members_employees; Object: Chaim Gartenberg
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7056521094649061; Subject: Microsoft Tech; Relation: org:top_members_employees; Object: Chaim Gartenberg
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5532458970609166; Subject: Linkedin Reddit; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 3 / 20
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 0.6969606587632149; Subject: Melinda Gates Foundation; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 4 / 20
+	Processed 6 / 20
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9716771311775211; Subject: Microsoft; Relation: org:top_members_employees; Object: Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9964751948126889; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9974993938877263; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		==========================
+
+	Processed 9 / 20
+	Processed 11 / 20
+	Processed 13 / 20
+		=== Extracted Relation ===
+		Sentence:  While Gates will still be at least somewhat involved with the company he founded through his position as a technology advisor , the move marks the furthest step away from running Microsoft that Gates has taken yet since he gave up the role of CEO back in 2000 .
+		Confidence: 0.500945245878203; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 14 / 20
+		=== Extracted Relation ===
+		Sentence:  Correction : A previous version of this story said Gates stepped down as Microsoft CEO in 2008 .
+		Confidence: 0.7084969381929466; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		==========================
+
+	Processed 15 / 20
+	Extracted kbp annotations for 18 out of total 20 sentences
+	Relations extracted from this website: 6  (Overall: 18)
+URL (4 / 10): https://techcrunch.com/2020/03/13/bill-gates-leaves-microsofts-board/
+	Fetching text from url ...
+	Webpage length (num characters): 2683
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 12 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 12
+		=== Extracted Relation ===
+		Sentence:  Bill Gates leaves Microsoft 's board Devin Coldewey @techcrunch / 2 weeks Bill Gates has stepped down from the board of Microsoft to spend more time on his philanthropic endeavors , the company announced Friday afternoon .
+		Confidence: 0.7137452444043426; Subject: Microsoft; Relation: org:top_members_employees; Object: Devin Coldewey
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Bill Gates leaves Microsoft 's board Devin Coldewey @techcrunch / 2 weeks Bill Gates has stepped down from the board of Microsoft to spend more time on his philanthropic endeavors , the company announced Friday afternoon .
+		Confidence: 0.901965881017941; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 3 / 12
+		=== Extracted Relation ===
+		Sentence:  Gates led Microsoft from the '80s all the way through 2008 , when he left to dedicate himself more fully to the Bill & Melinda Gates Foundation , through which he has channeled a great deal of his immense wealth toward global health concerns .
+		Confidence: 0.833288763932493; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 6 / 12
+	Processed 9 / 12
+	Processed 12 / 12
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9494734852473555; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.995505760551554; Subject: Mastercard; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.99111041268336; Subject: Microsoft; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9796653221483125; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8972679581548771; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8880154985774604; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9969991856746165; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9522820954223202; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9647649556233285; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9865534615613798; Subject: Mastercard; Relation: org:top_members_employees; Object: Dubilier
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9914244088942505; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9945925575817622; Subject: Mastercard; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9723099639189156; Subject: Microsoft; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9959948438025601; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9835959193418125; Subject: Mastercard; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.988389294116011; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9451964725453131; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9942666516596312; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9945551169071767; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9125255542858615; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9968653751029249; Subject: Microsoft; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9445795408158415; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9922279466373973; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9086725290255939; Subject: Microsoft; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.954873298660761; Subject: Microsoft; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9622771902825513; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9772742145654079; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9808250712401656; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9987990806549897; Subject: Mastercard; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9994100567257881; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9943592183809356; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9391378337741485; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9985077928195304; Subject: Mastercard; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.90283871672823; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9695535907251518; Subject: Greylock Partners; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9794848689316386; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Dubilier
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8783583568619944; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 1.0; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9962259714062648; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9893634722649155; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Dubilier
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9845774634372665; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9919591234309576; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9620010950327628; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 1.0; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8441243202388228; Subject: Microsoft; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9933159163847366; Subject: Microsoft; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9960595450888468; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9524532305645942; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9934402015015428; Subject: Greylock Partners; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9913832051055103; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.995349666692361; Subject: Mastercard; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9921674963523123; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9938846536083259; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9950799466738569; Subject: Microsoft; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8998957562218871; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Dubilier
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9847037633551801; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9488364628129408; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9898079639755332; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.996489137282799; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9936477209094433; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9988650805988601; Subject: Mastercard; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9645079864570563; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 1.0; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Teri L. List-Stoll
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9988911653356938; Subject: Mastercard; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9033915483355325; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Hugh Johnston
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9970614466664329; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: John W. Thompson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9710034431396066; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9933440899576658; Subject: Microsoft; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8137661279245116; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9833901052170752; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9512695756090702; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Dubilier
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9833973314328528; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Sandra E. Peterson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 1.0; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 1.0; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.6632667875431936; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Dubilier
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9960181769286159; Subject: Mastercard; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9914113209835778; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Emma Walmsley
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9967685866686049; Subject: Microsoft; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.8024726769936481; Subject: Fable Group Inc.; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9873000689460865; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9890123142130637; Subject: Greylock Partners; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9654432705294018; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9962446104720216; Subject: Microsoft; Relation: org:top_members_employees; Object: John W. Stanton
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9876710375935266; Subject: Microsoft; Relation: org:top_members_employees; Object: Dubilier
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9968173762571061; Subject: Wells Fargo & Co.; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9769444600481855; Subject: GlaxoSmithKline; Relation: org:top_members_employees; Object: Penny Pritzker
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9919800324990722; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Arne Sorenson
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9876464363549005; Subject: Mastercard; Relation: org:top_members_employees; Object: Charles W. Scharf
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 1.0; Subject: Mastercard; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9990017025194604; Subject: Marriott International Inc.; Relation: org:top_members_employees; Object: Reid Hoffman
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Gates , Wellcome and Mastercard launch $ 125 million fund to finance COVID-19 treatments The updated lineup on Microsoft 's board is as follows : John W. Thompson , Microsoft independent chair ; Reid Hoffman , partner at Greylock Partners ; Hugh Johnston , vice chairman and chief financial officer of PepsiCo ; Teri L. List-Stoll , executive vice president and chief financial officer of Gap , Inc. ; Satya Nadella , chief executive officer of Microsoft ; Sandra E. Peterson , operating partner , Clayton , Dubilier & Rice ; Penny Pritzker , founder and chairman , PSP Partners ; Charles W. Scharf , chief executive officer and president of Wells Fargo & Co. ; Arne Sorenson , president and CEO , Marriott International Inc. ; John W. Stanton , chairman of Trilogy Equity Partners ; Emma Walmsley , CEO of GlaxoSmithKline plc -LRB- GSK -RRB- ; and Padmasree Warrior , founder , CEO and president , Fable Group Inc. .
+		Confidence: 0.9941562303934718; Subject: Mastercard; Relation: org:top_members_employees; Object: Clayton
+		Adding to set of extracted relations
+		==========================
+
+	Extracted kbp annotations for 94 out of total 12 sentences
+	Relations extracted from this website: 91  (Overall: 94)
+URL (5 / 10): https://www.wired.com/story/bill-gates-steps-down-microsoft-board/
+	Fetching text from url ...
+	Webpage length (num characters): 7416
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 57 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 57
+	Processed 8 / 57
+		=== Extracted Relation ===
+		Sentence:  Gates explained the move on Friday in a brief LinkedIn post , in which he also said he was leaving the board of Berkshire Hathaway , the conglomerate led by his longtime friend Warren Buffett .
+		Confidence: 0.5772248468777083; Subject: Berkshire Hathaway; Relation: org:top_members_employees; Object: Warren Buffett
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 11 / 57
+	Processed 19 / 57
+	Processed 21 / 57
+	Processed 28 / 57
+		=== Extracted Relation ===
+		Sentence:  Though taking on polio , poverty , and the rising of the seas might seem more stressful than fighting Steve Jobs , Sony , or the Justice Department 's hired legal gunslinger , David Boies , Gates has approached the challenges with a humor and humility you seldom saw when he was speaking for Microsoft .
+		Confidence: 0.6643767501266572; Subject: Justice Department; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Though taking on polio , poverty , and the rising of the seas might seem more stressful than fighting Steve Jobs , Sony , or the Justice Department 's hired legal gunslinger , David Boies , Gates has approached the challenges with a humor and humility you seldom saw when he was speaking for Microsoft .
+		Confidence: 0.9055679617139191; Subject: Sony; Relation: org:top_members_employees; Object: Steve Jobs
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Though taking on polio , poverty , and the rising of the seas might seem more stressful than fighting Steve Jobs , Sony , or the Justice Department 's hired legal gunslinger , David Boies , Gates has approached the challenges with a humor and humility you seldom saw when he was speaking for Microsoft .
+		Confidence: 0.884479316270196; Subject: Justice Department; Relation: org:top_members_employees; Object: David Boies
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Though taking on polio , poverty , and the rising of the seas might seem more stressful than fighting Steve Jobs , Sony , or the Justice Department 's hired legal gunslinger , David Boies , Gates has approached the challenges with a humor and humility you seldom saw when he was speaking for Microsoft .
+		Confidence: 0.8914167099416093; Subject: Justice Department; Relation: org:top_members_employees; Object: Steve Jobs
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Though taking on polio , poverty , and the rising of the seas might seem more stressful than fighting Steve Jobs , Sony , or the Justice Department 's hired legal gunslinger , David Boies , Gates has approached the challenges with a humor and humility you seldom saw when he was speaking for Microsoft .
+		Confidence: 0.8284560413019748; Subject: Sony; Relation: org:top_members_employees; Object: David Boies
+		Adding to set of extracted relations
+		==========================
+
+	Processed 33 / 57
+		=== Extracted Relation ===
+		Sentence:  When Gates left his software architect job at Microsoft in 2008 , he told me that the subjects he tackled at the foundation were more vital than the ones he made about software .
+		Confidence: 0.5951541921920833; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 45 / 57
+		=== Extracted Relation ===
+		Sentence:  He has been writing about technology for more than 30 years , writing ... Read more Editor at Large Featured Video Bill Gates Talks About 6 Moments in His Life Bill Gates , one of WIRED 's 25 icons from its WIRED25 anniversary celebration , reflects on six important moments from his life and career , from teaching students to program in high school , to his relationships with Melinda Gates , Warren Buffett , and Paul Allen , the co-founder of Microsoft , who passed away on October 15 .
+		Confidence: 0.46546767573433495; Subject: Microsoft; Relation: org:top_members_employees; Object: Warren Buffett
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  He has been writing about technology for more than 30 years , writing ... Read more Editor at Large Featured Video Bill Gates Talks About 6 Moments in His Life Bill Gates , one of WIRED 's 25 icons from its WIRED25 anniversary celebration , reflects on six important moments from his life and career , from teaching students to program in high school , to his relationships with Melinda Gates , Warren Buffett , and Paul Allen , the co-founder of Microsoft , who passed away on October 15 .
+		Confidence: 0.4133229474516289; Subject: Microsoft; Relation: org:top_members_employees; Object: Melinda Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  He has been writing about technology for more than 30 years , writing ... Read more Editor at Large Featured Video Bill Gates Talks About 6 Moments in His Life Bill Gates , one of WIRED 's 25 icons from its WIRED25 anniversary celebration , reflects on six important moments from his life and career , from teaching students to program in high school , to his relationships with Melinda Gates , Warren Buffett , and Paul Allen , the co-founder of Microsoft , who passed away on October 15 .
+		Confidence: 0.9275268229512506; Subject: Microsoft; Relation: org:top_members_employees; Object: Paul Allen
+		Adding to set of extracted relations
+		==========================
+
+	Extracted kbp annotations for 10 out of total 57 sentences
+	Relations extracted from this website: 5  (Overall: 10)
+URL (6 / 10): https://en.wikipedia.org/wiki/Bill_Gates
+	Fetching text from url ...
+	Webpage length (num characters): 20000
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 134 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 3 / 134
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.8032683559848202; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: Bill Gates Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.5276828012541075; Subject: Cascade Investment Technology; Relation: org:top_members_employees; Object: Melinda French
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.682456486656639; Subject: Branded Entertainment Network; Relation: org:top_members_employees; Object: Bill Gates Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.6369232040565492; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: William Henry Gates III
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.6048121672146897; Subject: Cascade Investment Technology; Relation: org:top_members_employees; Object: William Henry Gates III
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.8214514920345609; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: Melinda French
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.802754059751819; Subject: Cascade Investment Technology; Relation: org:top_members_employees; Object: Bill Gates Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.7213465859727932; Subject: Microsoft; Relation: org:top_members_employees; Object: William Henry Gates III
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.6094247594971833; Subject: Microsoft; Relation: org:top_members_employees; Object: Melinda French
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  American business magnate and philanthropist Bill Gates Gates in 2018 Born William Henry Gates III -LRB- 1955-10-28 -RRB- October 28 , 1955 -LRB- age 64 -RRB- Seattle , Washington , U.S. Occupation Software developer investor entrepreneur philanthropist Years active 1975 -- present Known for Co-founder of Microsoft Net worth US$ 97.8 billion -LRB- March 2020 -RRB- -LSB- 1 -RSB- Title Co - chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor at Microsoft Spouse -LRB- s -RRB- Melinda French -LRB- m. 1994 -RRB- Children 3 Parents Bill Gates Sr. .
+		Confidence: 0.8701032880426939; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 6 / 134
+		=== Extracted Relation ===
+		Sentence:  -LSB- 2 -RSB- -LSB- 3 -RSB- During his career at Microsoft , Gates held the positions of chairman , chief executive officer -LRB- CEO -RRB- , president and chief software architect , while also being the largest individual shareholder until May 2014 .
+		Confidence: 0.8973483306439255; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 8 / 134
+		=== Extracted Relation ===
+		Sentence:  Born and raised in Seattle , Washington , Gates co-founded Microsoft with childhood friend Paul Allen in 1975 in Albuquerque , New Mexico ; it went on to become the world 's largest personal computer software company .
+		Confidence: 0.4114960558924445; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 12 / 134
+	Processed 14 / 134
+		=== Extracted Relation ===
+		Sentence:  -LSB- 10 -RSB- He stepped down as chairman of Microsoft in February 2014 and assumed a new post as technology adviser to support the newly appointed CEO Satya Nadella .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: He
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  -LSB- 10 -RSB- He stepped down as chairman of Microsoft in February 2014 and assumed a new post as technology adviser to support the newly appointed CEO Satya Nadella .
+		Confidence: 0.8253787377172513; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+	Processed 17 / 134
+	Processed 19 / 134
+	Processed 23 / 134
+	Processed 38 / 134
+	Processed 42 / 134
+		=== Extracted Relation ===
+		Sentence:  One of these systems was a PDP-10 belonging to Computer Center Corporation -LRB- CCC -RRB- which banned for the summer Gates , Paul Allen , Ric Weiland , and Gates ' best friend and first business collaborator Kent Evans after it caught them exploiting bugs in the operating system to obtain free computer time .
+		Confidence: 0.7963567544787284; Subject: Computer Center Corporation; Relation: org:top_members_employees; Object: Paul Allen
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  One of these systems was a PDP-10 belonging to Computer Center Corporation -LRB- CCC -RRB- which banned for the summer Gates , Paul Allen , Ric Weiland , and Gates ' best friend and first business collaborator Kent Evans after it caught them exploiting bugs in the operating system to obtain free computer time .
+		Confidence: 0.6208261308226817; Subject: Computer Center Corporation; Relation: org:top_members_employees; Object: Ric Weiland
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 45 / 134
+	Processed 52 / 134
+	Processed 57 / 134
+	Processed 58 / 134
+	Processed 59 / 134
+		=== Extracted Relation ===
+		Sentence:  Ballmer succeeded Gates as Microsoft 's CEO years later and maintained that position from 2000 until his resignation in 2014 .
+		Confidence: 0.6013949358107169; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Ballmer succeeded Gates as Microsoft 's CEO years later and maintained that position from 2000 until his resignation in 2014 .
+		Confidence: 0.5610696587793234; Subject: Microsoft; Relation: org:top_members_employees; Object: Ballmer
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 62 / 134
+		=== Extracted Relation ===
+		Sentence:  -LSB- 43 -RSB- His solution was formalized in a published paper in collaboration with Harvard computer scientist Christos Papadimitriou .
+		Confidence: 0.8712355635076334; Subject: Harvard; Relation: org:top_members_employees; Object: Christos Papadimitriou
+		Adding to set of extracted relations
+		==========================
+
+	Processed 63 / 134
+	Processed 64 / 134
+	Processed 65 / 134
+	Processed 66 / 134
+	Processed 71 / 134
+	Processed 74 / 134
+	Processed 78 / 134
+	Processed 79 / 134
+	Processed 88 / 134
+	Processed 90 / 134
+		=== Extracted Relation ===
+		Sentence:  IBM representative Jack Sams mentioned the licensing difficulties during a subsequent meeting with Gates and asked if Microsoft could provide an operating system .
+		Confidence: 1.0; Subject: IBM; Relation: org:top_members_employees; Object: Jack Sams
+		Adding to set of extracted relations
+		==========================
+
+	Processed 91 / 134
+	Processed 93 / 134
+	Processed 95 / 134
+	Processed 101 / 134
+		=== Extracted Relation ===
+		Sentence:  -LSB- 54 -RSB- Gates oversaw Microsoft 's company restructuring on June 25 , 1981 , which re-incorporated the company in Washington state and made Gates the president and chairman of the board , with Paul Allen as vice president and vice chairman .
+		Confidence: 0.9957120451822539; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		The same relation is already present but with a lower confidence. Just updating the confident value.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  -LSB- 54 -RSB- Gates oversaw Microsoft 's company restructuring on June 25 , 1981 , which re-incorporated the company in Washington state and made Gates the president and chairman of the board , with Paul Allen as vice president and vice chairman .
+		Confidence: 0.990431168914613; Subject: Microsoft; Relation: org:top_members_employees; Object: Paul Allen
+		Adding to set of extracted relations
+		==========================
+
+	Processed 102 / 134
+	Processed 108 / 134
+	Processed 110 / 134
+	Processed 114 / 134
+		=== Extracted Relation ===
+		Sentence:  -LSB- 64 -RSB- Gates met regularly with Microsoft 's senior managers and program managers , and the managers described him as being verbally combative .
+		Confidence: 0.5994513191725387; Subject: Microsoft; Relation: org:top_members_employees; Object: him
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  -LSB- 64 -RSB- Gates met regularly with Microsoft 's senior managers and program managers , and the managers described him as being verbally combative .
+		Confidence: 0.9237812041510207; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		==========================
+
+	Processed 119 / 134
+	Processed 121 / 134
+	Processed 122 / 134
+	Processed 125 / 134
+	Processed 133 / 134
+	Extracted kbp annotations for 24 out of total 134 sentences
+	Relations extracted from this website: 10  (Overall: 24)
+URL (7 / 10): https://www.bbc.com/news/business-51883377
+	Fetching text from url ...
+	Webpage length (num characters): 7426
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 20 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 20
+	Processed 2 / 20
+		=== Extracted Relation ===
+		Sentence:  These are external links and will open in a new window Close share panel Image copyright Reuters Microsoft co-founder Bill Gates is stepping down from the company 's board to spend more time on philanthropic activities .
+		Confidence: 0.7850651531105549; Subject: Reuters Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 4 / 20
+		=== Extracted Relation ===
+		Sentence:  One of the world 's richest men , Mr Gates , 64 , has also left the board of Warren Buffett 's massive holding company , Berkshire Hathaway .
+		Confidence: 1.0; Subject: Berkshire Hathaway; Relation: org:top_members_employees; Object: Warren Buffett
+		Adding to set of extracted relations
+		==========================
+
+	Processed 5 / 20
+		=== Extracted Relation ===
+		Sentence:  Mr Gates stepped down from his day-to-day role running Microsoft in 2008 .
+		Confidence: 0.42196072672325863; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 8 / 20
+		=== Extracted Relation ===
+		Sentence:  Mr Gates is listed by Forbes as the world 's second richest man after Amazon founder Jeff Bezos , and is worth $ 103.6 bn -LRB- £ 84.4 bn -RRB- .
+		Confidence: 0.50375343956897; Subject: Amazon; Relation: org:top_members_employees; Object: Jeff Bezos
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 10 / 20
+		=== Extracted Relation ===
+		Sentence:  More on Bill Gates : Bill Gates brandishes poo to showcase reinvented toilet tech Bill Gates reduces Microsoft stake with $ 4.6 bn donation Listen to Bill Gates on BBC Radio 4 's Desert Island Discs As a young man , he dropped out of college and moved to Albuquerque , in New Mexico , where he set up Microsoft with his childhood friend , Paul Allen , who died in 2018 .
+		Confidence: 0.5207083290714473; Subject: Desert Island Discs; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  More on Bill Gates : Bill Gates brandishes poo to showcase reinvented toilet tech Bill Gates reduces Microsoft stake with $ 4.6 bn donation Listen to Bill Gates on BBC Radio 4 's Desert Island Discs As a young man , he dropped out of college and moved to Albuquerque , in New Mexico , where he set up Microsoft with his childhood friend , Paul Allen , who died in 2018 .
+		Confidence: 0.5836017407292114; Subject: BBC Radio; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  More on Bill Gates : Bill Gates brandishes poo to showcase reinvented toilet tech Bill Gates reduces Microsoft stake with $ 4.6 bn donation Listen to Bill Gates on BBC Radio 4 's Desert Island Discs As a young man , he dropped out of college and moved to Albuquerque , in New Mexico , where he set up Microsoft with his childhood friend , Paul Allen , who died in 2018 .
+		Confidence: 0.5598205893815166; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 12 / 20
+		=== Extracted Relation ===
+		Sentence:  Microsoft went public in 1986 and within a year Bill Gates , at the age of 31 , had become the youngest self-made billionaire .
+		Confidence: 0.7243922479224433; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 13 / 20
+		=== Extracted Relation ===
+		Sentence:  Mr Gates has served on Berkshire 's board since 2004 but devotes much of his time to the charitable organisation he set up with his wife , the Bill & Melinda Gates Foundation .
+		Confidence: 0.7750016684328673; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Mr Gates has served on Berkshire 's board since 2004 but devotes much of his time to the charitable organisation he set up with his wife , the Bill & Melinda Gates Foundation .
+		Confidence: 0.8097284531371866; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: his
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Mr Gates has served on Berkshire 's board since 2004 but devotes much of his time to the charitable organisation he set up with his wife , the Bill & Melinda Gates Foundation .
+		Confidence: 0.6838989263755854; Subject: Berkshire; Relation: org:top_members_employees; Object: his
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Mr Gates has served on Berkshire 's board since 2004 but devotes much of his time to the charitable organisation he set up with his wife , the Bill & Melinda Gates Foundation .
+		Confidence: 0.9339307761655178; Subject: Berkshire; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Extracted kbp annotations for 12 out of total 20 sentences
+	Relations extracted from this website: 4  (Overall: 12)
+URL (8 / 10): https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 65 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 10 / 65
+	Processed 12 / 65
+	Processed 14 / 65
+	Processed 16 / 65
+		=== Extracted Relation ===
+		Sentence:  Bill Gates resigned from Microsoft 's board of directors last week , pretty much ending his official ties to the company he co-founded .
+		Confidence: 0.6284038769262309; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 17 / 65
+	Processed 19 / 65
+	Processed 27 / 65
+	Processed 29 / 65
+	Processed 31 / 65
+	Processed 42 / 65
+	Processed 46 / 65
+	Processed 48 / 65
+	Processed 54 / 65
+	Processed 56 / 65
+	Processed 61 / 65
+		=== Extracted Relation ===
+		Sentence:  Related : Microsoft Windows Rob Enderle is president and principal analyst of the Enderle Group , a forward looking emerging technology advisory firm .
+		Confidence: 1.0; Subject: Enderle Group; Relation: org:top_members_employees; Object: Rob Enderle
+		Adding to set of extracted relations
+		==========================
+
+	Extracted kbp annotations for 2 out of total 65 sentences
+	Relations extracted from this website: 1  (Overall: 2)
+URL (9 / 10): https://www.cnn.com/2020/03/13/business/bill-gates-microsoft-berkshire-boards/index.html
+	Fetching text from url ...
+	Webpage length (num characters): 6832
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 40 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 40
+		=== Extracted Relation ===
+		Sentence:  Markets Tech Media Success Perspectives Videos Edition U.S. International Arabic Español Markets Tech Media Success Perspectives Videos Search Edition U.S. International Arabic Español Markets Premarkets Dow 30 After-Hours Market Movers Fear & Greed World Markets Sector Performance Investing Markets Now Before the Bell Leading Indicator Global Energy Challenge Economy Energy Tech Innovate Gadget Foreseeable Future Mission : Ahead Upstarts Business Evolved Work Transformed Innovative Cities Unhackable Media Reliable Sources Success Boss Files Risk Takers Fresh Money Invest Ahead Cars Homes Wealth Coach Center Piece Perspectives Videos International Switzerland India Davos Reliable Sources Passion to Portfolio On : Germany More Accessibility & CC About Us Newsletters US World Politics Business Opinion Health Entertainment Tech Style Travel Sports Videos Coupons More Follow CNN Business Bill Gates is leaving Microsoft and Berkshire Hathaway 's boards By Chauncey Alcorn , CNN Business Updated 8:45 PM ET , Fri March 13 , 2020 Chat with us in Facebook Messenger .
+		Confidence: 0.5066512382718624; Subject: Markets Tech Media Success Perspectives Videos Edition U.S. International Arabic Español Markets Tech Media Success Perspectives Videos Search Edition U.S. International Arabic Español Markets Premarkets Dow; Relation: org:top_members_employees; Object: Chauncey Alcorn
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 7 / 40
+	Processed 9 / 40
+		=== Extracted Relation ===
+		Sentence:  `` It 's been a tremendous honor and privilege to have worked with and learned from Bill over the years , '' Mirosoft CEO Satya Nadella said in a written statement .
+		Confidence: 1.0; Subject: Mirosoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+
+	Processed 10 / 40
+	Processed 12 / 40
+		=== Extracted Relation ===
+		Sentence:  Gates will continue serving as technology adviser to Nadella and other Microsoft leaders , the company said .
+		Confidence: 0.49994673911481186; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 13 / 40
+	Processed 14 / 40
+		=== Extracted Relation ===
+		Sentence:  Separately in an SEC filing , Berkshire Hathaway said former American Express CEO Kenneth Chenault would replace Gates , who has served on Berkshire 's board since 2004 .
+		Confidence: 1.0; Subject: American Express; Relation: org:top_members_employees; Object: Kenneth Chenault
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Separately in an SEC filing , Berkshire Hathaway said former American Express CEO Kenneth Chenault would replace Gates , who has served on Berkshire 's board since 2004 .
+		Confidence: 0.521450943773285; Subject: Berkshire; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 15 / 40
+	Processed 17 / 40
+		=== Extracted Relation ===
+		Sentence:  In a written statement posted on Facebook 's website Friday , Chenault said serving on Berkshire Hathaway 's board and working closely with his friend , Berkshire CEO Warren Buffett , is `` a once-in-a-lifetime opportunity . ''
+		Confidence: 0.6528463092476192; Subject: Facebook; Relation: org:top_members_employees; Object: Chenault
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  In a written statement posted on Facebook 's website Friday , Chenault said serving on Berkshire Hathaway 's board and working closely with his friend , Berkshire CEO Warren Buffett , is `` a once-in-a-lifetime opportunity . ''
+		Confidence: 1.0; Subject: Berkshire; Relation: org:top_members_employees; Object: Warren Buffett
+		Adding to set of extracted relations
+		==========================
+
+	Processed 19 / 40
+		=== Extracted Relation ===
+		Sentence:  With an estimated net worth of over $ 100 billion , Gates is the second richest person in the world after Amazon 's Jeff Bezos , according to the Bloomberg Billionaire Index .
+		Confidence: 0.8694514000933451; Subject: Amazon; Relation: org:top_members_employees; Object: Jeff Bezos
+		Adding to set of extracted relations
+		==========================
+
+	Processed 20 / 40
+	Processed 21 / 40
+		=== Extracted Relation ===
+		Sentence:  Gates 's role as chair of Microsoft 's board ended in 2014 .
+		Confidence: 0.7692786786031085; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+
+	Processed 35 / 40
+		=== Extracted Relation ===
+		Sentence:  Standard & Poor 's and S&P ; are registered trademarks of Standard & Poor 's Financial Services LLC and Dow Jones is a registered trademark of Dow Jones Trademark Holdings LLC .
+		Confidence: 0.4956933614110917; Subject: Dow Jones Trademark Holdings LLC; Relation: org:top_members_employees; Object: Dow Jones
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Extracted kbp annotations for 10 out of total 40 sentences
+	Relations extracted from this website: 3  (Overall: 10)
+URL (10 / 10): https://arstechnica.com/information-technology/2020/03/bill-gates-steps-down-from-microsoft-board/
+	Fetching text from url ...
+	Webpage length (num characters): 5051
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 26 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 3 / 26
+		=== Extracted Relation ===
+		Sentence:  Sign up to comment and more Sign up Unboarding -- Bill Gates steps down from Microsoft board Microsoft co-founder exits the board 45 years after starting the company .
+		Confidence: 0.5331677845901254; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 4 / 26
+		=== Extracted Relation ===
+		Sentence:  Eric Bangeman - Mar 13 , 2020 9:46 pm UTC Enlarge / US Microsoft founder , Co-Chairman of the Bill & Melinda Gates Foundation , Bill Gates , poses for a picture on October 9 , 2019 , in Lyon , central eastern France , during the funding conference of Global Fund to Fight AIDS , Tuberculosis and Malaria .
+		Confidence: 0.577058822630097; Subject: UTC; Relation: org:top_members_employees; Object: Eric Bangeman
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Eric Bangeman - Mar 13 , 2020 9:46 pm UTC Enlarge / US Microsoft founder , Co-Chairman of the Bill & Melinda Gates Foundation , Bill Gates , poses for a picture on October 9 , 2019 , in Lyon , central eastern France , during the funding conference of Global Fund to Fight AIDS , Tuberculosis and Malaria .
+		Confidence: 0.9498343387632066; Subject: Bill & Melinda Gates Foundation; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Eric Bangeman - Mar 13 , 2020 9:46 pm UTC Enlarge / US Microsoft founder , Co-Chairman of the Bill & Melinda Gates Foundation , Bill Gates , poses for a picture on October 9 , 2019 , in Lyon , central eastern France , during the funding conference of Global Fund to Fight AIDS , Tuberculosis and Malaria .
+		Confidence: 0.6863021625335322; Subject: Microsoft; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 5 / 26
+		=== Extracted Relation ===
+		Sentence:  Jeff Pachoud | Getty Images reader comments 92 with 70 posters participating Share this story Share on Facebook Share on Twitter Share on Reddit Just over 20 years after stepping down as CEO of Microsoft and six years after relinquishing his position as Chairman of the Board , Microsoft cofounder Bill Gates has resigned from the Microsoft Board of Directors .
+		Confidence: 0.48684058267079794; Subject: Facebook Share; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+		=== Extracted Relation ===
+		Sentence:  Jeff Pachoud | Getty Images reader comments 92 with 70 posters participating Share this story Share on Facebook Share on Twitter Share on Reddit Just over 20 years after stepping down as CEO of Microsoft and six years after relinquishing his position as Chairman of the Board , Microsoft cofounder Bill Gates has resigned from the Microsoft Board of Directors .
+		Confidence: 0.9239025231063517; Subject: Microsoft; Relation: org:top_members_employees; Object: Jeff Pachoud
+		Adding to set of extracted relations
+		==========================
+
+	Processed 7 / 26
+	Processed 9 / 26
+	Processed 13 / 26
+	Processed 14 / 26
+	Processed 16 / 26
+		=== Extracted Relation ===
+		Sentence:  He leaves an enduring legacy of curiosity and insight that serves as an inspiration for us all , '' said John W. Thompson , Microsoft independent board chair .
+		Confidence: 0.501172057917614; Subject: Microsoft; Relation: org:top_members_employees; Object: John W. Thompson
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+
+	Processed 17 / 26
+	Extracted kbp annotations for 7 out of total 26 sentences
+	Relations extracted from this website: 2  (Overall: 7)
+
+
+================== ALL RELATIONS (127) ==================
+Confidence: 1.0000  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Gates          
+Confidence: 1.0000  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 1.0000  | Subject: American Express   | Relation: org:top_members_employees    | Object: Kenneth Chenault
+Confidence: 1.0000  | Subject: Wedbush Securities   | Relation: org:top_members_employees    | Object: Daniel Ives    
+Confidence: 1.0000  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 1.0000  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 1.0000  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 1.0000  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 1.0000  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 1.0000  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 1.0000  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: He             
+Confidence: 1.0000  | Subject: IBM               | Relation: org:top_members_employees    | Object: Jack Sams      
+Confidence: 1.0000  | Subject: Berkshire Hathaway   | Relation: org:top_members_employees    | Object: Warren Buffett 
+Confidence: 1.0000  | Subject: Enderle Group     | Relation: org:top_members_employees    | Object: Rob Enderle    
+Confidence: 1.0000  | Subject: Mirosoft          | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 1.0000  | Subject: Berkshire         | Relation: org:top_members_employees    | Object: Warren Buffett 
+Confidence: 0.9994  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9990  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9989  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9989  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 0.9988  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9985  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 0.9971  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9970  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 0.9969  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.9968  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9968  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.9965  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9962  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 0.9962  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 0.9961  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 0.9960  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 0.9960  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9955  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.9953  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.9951  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 0.9946  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 0.9946  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.9944  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.9943  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.9942  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.9939  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 0.9934  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 0.9933  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.9933  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 0.9922  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.9922  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9920  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.9920  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9914  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 0.9914  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 0.9914  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.9911  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9904  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Paul Allen     
+Confidence: 0.9898  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9894  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Dubilier       
+Confidence: 0.9890  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 0.9884  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 0.9877  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Dubilier       
+Confidence: 0.9876  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 0.9873  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 0.9866  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Dubilier       
+Confidence: 0.9847  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 0.9846  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9836  | Subject: Mastercard        | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9834  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.9834  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 0.9808  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9797  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.9795  | Subject: Marriott International Inc.   | Relation: org:top_members_employees    | Object: Dubilier       
+Confidence: 0.9773  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 0.9769  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9723  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 0.9717  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Nadella        
+Confidence: 0.9710  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.9696  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9654  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.9648  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 0.9645  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 0.9623  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.9620  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 0.9549  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: John W. Thompson
+Confidence: 0.9525  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 0.9523  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9513  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Dubilier       
+Confidence: 0.9498  | Subject: Bill & Melinda Gates Foundation   | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.9495  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Teri L. List-Stoll
+Confidence: 0.9488  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 0.9452  | Subject: Wells Fargo & Co.   | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 0.9446  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Charles W. Scharf
+Confidence: 0.9391  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.9365  | Subject: Microsoft Tech    | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.9339  | Subject: Berkshire         | Relation: org:top_members_employees    | Object: Gates          
+Confidence: 0.9239  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Jeff Pachoud   
+Confidence: 0.9125  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Emma Walmsley  
+Confidence: 0.9087  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Reid Hoffman   
+Confidence: 0.9056  | Subject: Sony              | Relation: org:top_members_employees    | Object: Steve Jobs     
+Confidence: 0.9055  | Subject: Netflix           | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.9034  | Subject: Greylock Partners   | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 0.9028  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Penny Pritzker 
+Confidence: 0.9020  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.9020  | Subject: American Express   | Relation: org:top_members_employees    | Object: Gates          
+Confidence: 0.8999  | Subject: GlaxoSmithKline   | Relation: org:top_members_employees    | Object: Dubilier       
+Confidence: 0.8973  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: John W. Stanton
+Confidence: 0.8914  | Subject: Justice Department   | Relation: org:top_members_employees    | Object: Steve Jobs     
+Confidence: 0.8880  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Arne Sorenson  
+Confidence: 0.8845  | Subject: Justice Department   | Relation: org:top_members_employees    | Object: David Boies    
+Confidence: 0.8784  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Sandra E. Peterson
+Confidence: 0.8712  | Subject: Harvard           | Relation: org:top_members_employees    | Object: Christos Papadimitriou
+Confidence: 0.8701  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Bill Gates Gates
+Confidence: 0.8695  | Subject: Amazon            | Relation: org:top_members_employees    | Object: Jeff Bezos     
+Confidence: 0.8638  | Subject: Bill & Melinda Gates Foundation   | Relation: org:top_members_employees    | Object: Gates          
+Confidence: 0.8441  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Hugh Johnston  
+Confidence: 0.8285  | Subject: Sony              | Relation: org:top_members_employees    | Object: David Boies    
+Confidence: 0.8215  | Subject: Bill & Melinda Gates Foundation   | Relation: org:top_members_employees    | Object: Melinda French 
+Confidence: 0.8138  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Clayton        
+Confidence: 0.8097  | Subject: Bill & Melinda Gates Foundation   | Relation: org:top_members_employees    | Object: his            
+Confidence: 0.8033  | Subject: Bill & Melinda Gates Foundation   | Relation: org:top_members_employees    | Object: Bill Gates Gates
+Confidence: 0.8028  | Subject: Cascade Investment Technology   | Relation: org:top_members_employees    | Object: Bill Gates Gates
+Confidence: 0.8025  | Subject: Fable Group Inc.   | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 0.7964  | Subject: Computer Center Corporation   | Relation: org:top_members_employees    | Object: Paul Allen     
+Confidence: 0.7851  | Subject: Reuters Microsoft   | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.7711  | Subject: Linkedin Reddit   | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.7213  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: William Henry Gates III
+Confidence: 0.7163  | Subject: Microsoft Tech    | Relation: org:top_members_employees    | Object: Saeed Adyani   
+Confidence: 0.7137  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Devin Coldewey 
+Confidence: 0.7057  | Subject: Microsoft Tech    | Relation: org:top_members_employees    | Object: Chaim Gartenberg
+Total Time: 11.912885502974193

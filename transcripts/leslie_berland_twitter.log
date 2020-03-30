@@ -1,0 +1,390 @@
+----
+Parameters:
+Client key	= -----------------------------
+Engine key	= -----------------------------
+Relation	= per:employee_or_member_of
+Threshold	= 0.4
+Query		= Leslie Berland Twitter
+# of Tuples	= 2.0
+
+Loading necessary libraries; This should take a minute or so ... 
+
+=========== Iteration: 0 - Query: Leslie Berland Twitter =========== 
+URL (1 / 10): https://twitter.com/leslieberland?lang=en
+	Fetching text from url ...
+	Webpage length (num characters): 20000
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 117 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 56 / 117
+	Processed 58 / 117
+	Processed 68 / 117
+	Processed 72 / 117
+	Processed 73 / 117
+	Processed 116 / 117
+	Extracted kbp annotations for 0 out of total 117 sentences
+	Relations extracted from this website: 0  (Overall: 0)
+
+URL (2 / 10): https://www.linkedin.com/in/leslie-berland-1741781
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 20 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 20
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.9507736424477552; Subject: Bill Gates; Relation: per:employee_or_member_of; Object: Netflix
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5630365168126132; Subject: Chaim Gartenberg; Relation: per:employee_or_member_of; Object: Netflix
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 1.0; Subject: Bill Gates; Relation: per:employee_or_member_of; Object: Microsoft Tech
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.6029712178157874; Subject: Saeed Adyani; Relation: per:employee_or_member_of; Object: Linkedin Reddit
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7008991555822259; Subject: Saeed Adyani; Relation: per:employee_or_member_of; Object: Microsoft Tech
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5710637737930949; Subject: Saeed Adyani; Relation: per:employee_or_member_of; Object: Netflix
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.8421145502701473; Subject: Bill Gates; Relation: per:employee_or_member_of; Object: Linkedin Reddit
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7455555847222372; Subject: Bill Gates; Relation: per:employee_or_member_of; Object: Facebook Share
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5243606787747964; Subject: Chaim Gartenberg; Relation: per:employee_or_member_of; Object: Linkedin Reddit
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.622973590542249; Subject: Saeed Adyani; Relation: per:employee_or_member_of; Object: Facebook Share
+		Adding to set of extracted relations
+		==========================
+	Processed 3 / 20
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 0.6559418329885564; Subject: Bill; Relation: per:employee_or_member_of; Object: Melinda Gates Foundation
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 0.7769726403275385; Subject: Gates; Relation: per:employee_or_member_of; Object: Melinda Gates Foundation
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 0.7389223079635598; Subject: Bill; Relation: per:employee_or_member_of; Object: Microsoft
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 1.0; Subject: Gates; Relation: per:employee_or_member_of; Object: Microsoft
+		Adding to set of extracted relations
+		==========================
+	Processed 4 / 20
+	Processed 6 / 20
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9475013336759335; Subject: Nadella; Relation: per:employee_or_member_of; Object: Microsoft
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9871701534954932; Subject: Satya Nadella; Relation: per:employee_or_member_of; Object: Microsoft
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9796954888119302; Subject: Gates; Relation: per:employee_or_member_of; Object: Microsoft
+		==========================
+	Processed 9 / 20
+	Processed 11 / 20
+	Processed 13 / 20
+		=== Extracted Relation ===
+		Sentence:  While Gates will still be at least somewhat involved with the company he founded through his position as a technology advisor , the move marks the furthest step away from running Microsoft that Gates has taken yet since he gave up the role of CEO back in 2000 .
+		Confidence: 0.6577084988522998; Subject: Gates; Relation: per:employee_or_member_of; Object: Microsoft
+		==========================
+	Processed 14 / 20
+		=== Extracted Relation ===
+		Sentence:  Correction : A previous version of this story said Gates stepped down as Microsoft CEO in 2008 .
+		Confidence: 0.5423887988969476; Subject: Gates; Relation: per:employee_or_member_of; Object: Microsoft
+		==========================
+	Processed 15 / 20
+	Extracted kbp annotations for 19 out of total 20 sentences
+	Relations extracted from this website: 16  (Overall: 19)
+
+URL (3 / 10): https://www.cnbc.com/2019/09/23/why-twitter-cmo-leslie-berland-holds-meetings-outdoors.html
+	Fetching text from url ...
+	Webpage length (num characters): 4653
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 27 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 27
+		=== Extracted Relation ===
+		Sentence:  Skip Navigation Success Start-ups Side Hustles Power Players Young Success Money Earn Spend Save and Invest Become Debt-Free Work Land the Job Get Ahead Be the Boss Science of Success Life Food , Travel and Tech Books and Culture Health and Wellness Live the Dream Video Most Popular CNBC TV Menu SEARCH CNBC.COM Work Slack CEO to employees amid COVID-19 : ` Do n't stress about work ' Catherine Clifford Save and Invest Here 's how big your emergency fund should be during the COVID-19 pandemic Kathleen Elkins Spend How the rich are self-isolating from the coronavirus Vicky McKeever Closing The Gap Twitter CMO Leslie Berland says this simple change brings more ` openness ' to meetings Published Mon , Sep 23 2019 10:32 AM EDT Courtney Connley @classicalycourt Twitter 's CMO and Head of People Leslie Berland .
+		Confidence: 0.5057812182053026; Subject: Catherine Clifford Save; Relation: per:employee_or_member_of; Object: CNBC
+		Adding to set of extracted relations
+		==========================
+	Processed 2 / 27
+		=== Extracted Relation ===
+		Sentence:  Photo credit : Twitter Since becoming Twitter 's first-ever chief marketing officer in 2016 , Leslie Berland has helped to solidify the company 's brand and marketing direction .
+		Confidence: 0.5677167116367519; Subject: Leslie Berland; Relation: per:employee_or_member_of; Object: Twitter
+		Adding to set of extracted relations
+		==========================
+	Processed 9 / 27
+		=== Extracted Relation ===
+		Sentence:  Francois Durand | Getty Images Entertainment | Getty Images Berland is based in New York City but travels regularly with Twitter CEO Jack Dorsey to the company 's more than 35 offices around the world .
+		Confidence: 0.6422816207035423; Subject: Francois Durand; Relation: per:employee_or_member_of; Object: Twitter
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Francois Durand | Getty Images Entertainment | Getty Images Berland is based in New York City but travels regularly with Twitter CEO Jack Dorsey to the company 's more than 35 offices around the world .
+		Confidence: 0.7045692414413994; Subject: Francois Durand; Relation: per:employee_or_member_of; Object: Getty Images Berland
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Francois Durand | Getty Images Entertainment | Getty Images Berland is based in New York City but travels regularly with Twitter CEO Jack Dorsey to the company 's more than 35 offices around the world .
+		Confidence: 1.0; Subject: Jack Dorsey; Relation: per:employee_or_member_of; Object: Twitter
+		Adding to set of extracted relations
+		==========================
+	Processed 14 / 27
+		=== Extracted Relation ===
+		Sentence:  Like Berland , Facebook CEO Mark Zuckerberg and LinkedIn CEO Jeff Weiner believe in walking meetings , as did the late Steve Jobs .
+		Confidence: 1.0; Subject: Mark Zuckerberg; Relation: per:employee_or_member_of; Object: Facebook
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Like Berland , Facebook CEO Mark Zuckerberg and LinkedIn CEO Jeff Weiner believe in walking meetings , as did the late Steve Jobs .
+		Confidence: 1.0; Subject: Jeff Weiner; Relation: per:employee_or_member_of; Object: LinkedIn
+		Adding to set of extracted relations
+		==========================
+	Processed 15 / 27
+	Processed 16 / 27
+	Processed 25 / 27
+		=== Extracted Relation ===
+		Sentence:  Do n't miss : The go-to interview question this Twitter executive always asks before making a new hire VIDEO 1:10 01:10 Facebook VP Julie Zhuo : Here 's my favorite interview question Ace Your Job Interview Trending Now This calculator tells you exactly how big your coronavirus stimulus check could be Many college students and other adult dependents are not eligible to receive a stimulus relief check New relief bill boosts unemployment insurance by $ 600 a week for gig workers , freelancers and more Everything you need to know about the coronavirus stimulus checks If you lose your job due to the coronavirus pandemic , here 's how to navigate filing for unemployment Stay in the loop Get Make It newsletters delivered to your inbox Sign Up About Us Learn more about the world of CNBC Make It Learn More Follow Us CNBC.COM © 2020 CNBC LLC .
+		Confidence: 0.6669155910956517; Subject: Julie Zhuo; Relation: per:employee_or_member_of; Object: Facebook
+		Adding to set of extracted relations
+		==========================
+	Extracted kbp annotations for 8 out of total 27 sentences
+	Relations extracted from this website: 8  (Overall: 8)
+
+URL (4 / 10): https://www.vox.com/2017/8/24/16199808/twitter-leslie-berland-human-resources-cmo-promotion
+	Fetching text from url ...
+	Webpage length (num characters): 6726
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 31 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 31
+	Processed 3 / 31
+	Processed 6 / 31
+		=== Extracted Relation ===
+		Sentence:  Twitter has also hired Jennifer Christie , most recently a senior vice president of human resources at American Express , where Berland used to work .
+		Confidence: 1.0; Subject: Jennifer Christie; Relation: per:employee_or_member_of; Object: American Express
+		Adding to set of extracted relations
+		==========================
+	Processed 7 / 31
+	Processed 8 / 31
+		=== Extracted Relation ===
+		Sentence:  Twitter 's old VP of human resources , Brian `` Skip '' Schipper , announced he was leaving way back in January 2016 , the same day Twitter lost a number of other key VPs .
+		Confidence: 0.8071488785165776; Subject: Brian; Relation: per:employee_or_member_of; Object: Twitter
+		Adding to set of extracted relations
+		==========================
+	Processed 10 / 31
+	Processed 14 / 31
+	Processed 17 / 31
+		=== Extracted Relation ===
+		Sentence:  Renee Atwood , formerly of Uber , was at Twitter for six months running HR earlier this year before a quick departure .
+		Confidence: 0.7963193761393998; Subject: Renee Atwood; Relation: per:employee_or_member_of; Object: Twitter
+		Adding to set of extracted relations
+		==========================
+	Processed 21 / 31
+	Processed 27 / 31
+	Processed 29 / 31
+	Extracted kbp annotations for 3 out of total 31 sentences
+	Relations extracted from this website: 3  (Overall: 3)
+
+URL (5 / 10): https://www.cnbc.com/2019/09/30/twitter-cmo-leslie-berland-on-career-advice-young-people-should-avoid.html
+	Fetching text from url ...
+	Webpage length (num characters): 4271
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 23 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 23
+	Processed 2 / 23
+	Processed 3 / 23
+		=== Extracted Relation ===
+		Sentence:  Prior to joining Twitter in 2016 , the Boston University graduate worked at public-relations for , Ketchum , healthcare communications company GCI Health and American Express , where she served as an executive for more than 10 years .
+		Confidence: 0.5479980929663099; Subject: she; Relation: per:employee_or_member_of; Object: Boston University
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Prior to joining Twitter in 2016 , the Boston University graduate worked at public-relations for , Ketchum , healthcare communications company GCI Health and American Express , where she served as an executive for more than 10 years .
+		Confidence: 0.762446510315481; Subject: Ketchum; Relation: per:employee_or_member_of; Object: GCI Health and American Express
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Prior to joining Twitter in 2016 , the Boston University graduate worked at public-relations for , Ketchum , healthcare communications company GCI Health and American Express , where she served as an executive for more than 10 years .
+		Confidence: 0.6076784695749272; Subject: she; Relation: per:employee_or_member_of; Object: GCI Health and American Express
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Prior to joining Twitter in 2016 , the Boston University graduate worked at public-relations for , Ketchum , healthcare communications company GCI Health and American Express , where she served as an executive for more than 10 years .
+		Confidence: 0.41928320764924343; Subject: Ketchum; Relation: per:employee_or_member_of; Object: Boston University
+		Adding to set of extracted relations
+		==========================
+	Processed 7 / 23
+	Extracted kbp annotations for 4 out of total 23 sentences
+	Relations extracted from this website: 4  (Overall: 4)
+
+URL (6 / 10): https://www.adweek.com/inside-the-brand/cmo-moves/leslie-berland-twitter-leading-with-impact/
+	Fetching text from url ...
+	Webpage length (num characters): 3873
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 9 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 9
+	Processed 5 / 9
+	Extracted kbp annotations for 0 out of total 9 sentences
+	Relations extracted from this website: 0  (Overall: 0)
+
+URL (7 / 10): https://www.youtube.com/watch?v=4XrmjwVAsrY
+	Fetching text from url ...
+	Webpage length (num characters): 6639
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 41 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 4 / 41
+	Processed 17 / 41
+		=== Extracted Relation ===
+		Sentence:  Published on Aug 18 , 2017 We have Leslie Berland , CMO Twitter and Matt Derela , Global VP for Sales at Twitter speak to us about how both of them work as a team to make the Twitter experience better for the users and marketers alike .
+		Confidence: 0.7187149170116215; Subject: Matt Derela; Relation: per:employee_or_member_of; Object: CMO Twitter
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Published on Aug 18 , 2017 We have Leslie Berland , CMO Twitter and Matt Derela , Global VP for Sales at Twitter speak to us about how both of them work as a team to make the Twitter experience better for the users and marketers alike .
+		Confidence: 0.7092268842452986; Subject: Leslie Berland; Relation: per:employee_or_member_of; Object: CMO Twitter
+		Adding to set of extracted relations
+		==========================
+	Processed 20 / 41
+	Processed 23 / 41
+	Processed 28 / 41
+	Processed 29 / 41
+	Processed 39 / 41
+	Processed 40 / 41
+	Extracted kbp annotations for 2 out of total 41 sentences
+	Relations extracted from this website: 2  (Overall: 2)
+
+URL (8 / 10): https://en.wikipedia.org/wiki/Leslie_Berland
+	Fetching text from url ...
+	Webpage length (num characters): 4931
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 81 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 81
+	Processed 20 / 81
+		=== Extracted Relation ===
+		Sentence:  ^ `` Leslie Berland appointed as Chief Marketing Officer of Twitter Inc '' .
+		Confidence: 0.9353773241597556; Subject: Leslie Berland; Relation: per:employee_or_member_of; Object: Twitter Inc
+		Adding to set of extracted relations
+		==========================
+	Processed 66 / 81
+		=== Extracted Relation ===
+		Sentence:  ^ `` Twitter Names AmEx 's Leslie Berland Its CMO '' .
+		Confidence: 0.5713843528865716; Subject: Leslie Berland; Relation: per:employee_or_member_of; Object: Twitter Names AmEx
+		Adding to set of extracted relations
+		==========================
+	Extracted kbp annotations for 2 out of total 81 sentences
+	Relations extracted from this website: 2  (Overall: 2)
+
+URL (9 / 10): https://www.hollywoodreporter.com/news/why-twitter-exec-leslie-berland-910644
+	Fetching text from url ...
+	Webpage length (num characters): 4248
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 17 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 17
+	Processed 3 / 17
+	Processed 6 / 17
+	Processed 12 / 17
+	Extracted kbp annotations for 0 out of total 17 sentences
+	Relations extracted from this website: 0  (Overall: 0)
+
+URL (10 / 10): https://techcrunch.com/2016/01/26/twitter-confirms-amexs-leslie-berland-as-its-new-cmo/
+	Fetching text from url ...
+	Webpage length (num characters): 3735
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 24 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 24
+		=== Extracted Relation ===
+		Sentence:  Twitter Confirms Amex 's Leslie Berland As Its New CMO Ingrid Lunden @ingridlunden / 4 years Twitter 's CEO Jack Dorsey today announced a new CMO for the company -- Leslie Berland , who joins from American Express .
+		Confidence: 1.0; Subject: Jack Dorsey; Relation: per:employee_or_member_of; Object: Twitter
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Twitter Confirms Amex 's Leslie Berland As Its New CMO Ingrid Lunden @ingridlunden / 4 years Twitter 's CEO Jack Dorsey today announced a new CMO for the company -- Leslie Berland , who joins from American Express .
+		Confidence: 0.5645482092173804; Subject: Leslie Berland; Relation: per:employee_or_member_of; Object: American Express
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Twitter Confirms Amex 's Leslie Berland As Its New CMO Ingrid Lunden @ingridlunden / 4 years Twitter 's CEO Jack Dorsey today announced a new CMO for the company -- Leslie Berland , who joins from American Express .
+		Confidence: 0.6996623387388006; Subject: Leslie Berland; Relation: per:employee_or_member_of; Object: Twitter Confirms Amex
+		Adding to set of extracted relations
+		==========================
+	Processed 10 / 24
+	Extracted kbp annotations for 3 out of total 24 sentences
+	Relations extracted from this website: 2  (Overall: 3)
+
+
+
+================== ALL RELATIONS (37) ==================
+Confidence: 1.0000  | Subject: Bill Gates        | Relation: per:employee_or_member_of    | Object: Microsoft Tech 
+Confidence: 1.0000  | Subject: Gates             | Relation: per:employee_or_member_of    | Object: Microsoft      
+Confidence: 1.0000  | Subject: Jack Dorsey       | Relation: per:employee_or_member_of    | Object: Twitter        
+Confidence: 1.0000  | Subject: Mark Zuckerberg   | Relation: per:employee_or_member_of    | Object: Facebook       
+Confidence: 1.0000  | Subject: Jeff Weiner       | Relation: per:employee_or_member_of    | Object: LinkedIn       
+Confidence: 1.0000  | Subject: Jennifer Christie   | Relation: per:employee_or_member_of    | Object: American Express
+Confidence: 0.9872  | Subject: Satya Nadella     | Relation: per:employee_or_member_of    | Object: Microsoft      
+Confidence: 0.9508  | Subject: Bill Gates        | Relation: per:employee_or_member_of    | Object: Netflix        
+Confidence: 0.9475  | Subject: Nadella           | Relation: per:employee_or_member_of    | Object: Microsoft      
+Confidence: 0.9354  | Subject: Leslie Berland    | Relation: per:employee_or_member_of    | Object: Twitter Inc    
+Confidence: 0.8421  | Subject: Bill Gates        | Relation: per:employee_or_member_of    | Object: Linkedin Reddit
+Confidence: 0.8071  | Subject: Brian             | Relation: per:employee_or_member_of    | Object: Twitter        
+Confidence: 0.7963  | Subject: Renee Atwood      | Relation: per:employee_or_member_of    | Object: Twitter        
+Confidence: 0.7770  | Subject: Gates             | Relation: per:employee_or_member_of    | Object: Melinda Gates Foundation
+Confidence: 0.7624  | Subject: Ketchum           | Relation: per:employee_or_member_of    | Object: GCI Health and American Express
+Confidence: 0.7456  | Subject: Bill Gates        | Relation: per:employee_or_member_of    | Object: Facebook Share 
+Confidence: 0.7389  | Subject: Bill              | Relation: per:employee_or_member_of    | Object: Microsoft      
+Confidence: 0.7187  | Subject: Matt Derela       | Relation: per:employee_or_member_of    | Object: CMO Twitter    
+Confidence: 0.7092  | Subject: Leslie Berland    | Relation: per:employee_or_member_of    | Object: CMO Twitter    
+Confidence: 0.7046  | Subject: Francois Durand   | Relation: per:employee_or_member_of    | Object: Getty Images Berland
+Confidence: 0.7009  | Subject: Saeed Adyani      | Relation: per:employee_or_member_of    | Object: Microsoft Tech 
+Confidence: 0.6997  | Subject: Leslie Berland    | Relation: per:employee_or_member_of    | Object: Twitter Confirms Amex
+Confidence: 0.6669  | Subject: Julie Zhuo        | Relation: per:employee_or_member_of    | Object: Facebook       
+Confidence: 0.6559  | Subject: Bill              | Relation: per:employee_or_member_of    | Object: Melinda Gates Foundation
+Confidence: 0.6423  | Subject: Francois Durand   | Relation: per:employee_or_member_of    | Object: Twitter        
+Confidence: 0.6230  | Subject: Saeed Adyani      | Relation: per:employee_or_member_of    | Object: Facebook Share 
+Confidence: 0.6077  | Subject: she               | Relation: per:employee_or_member_of    | Object: GCI Health and American Express
+Confidence: 0.6030  | Subject: Saeed Adyani      | Relation: per:employee_or_member_of    | Object: Linkedin Reddit
+Confidence: 0.5714  | Subject: Leslie Berland    | Relation: per:employee_or_member_of    | Object: Twitter Names AmEx
+Confidence: 0.5711  | Subject: Saeed Adyani      | Relation: per:employee_or_member_of    | Object: Netflix        
+Confidence: 0.5677  | Subject: Leslie Berland    | Relation: per:employee_or_member_of    | Object: Twitter        
+Confidence: 0.5645  | Subject: Leslie Berland    | Relation: per:employee_or_member_of    | Object: American Express
+Confidence: 0.5630  | Subject: Chaim Gartenberg   | Relation: per:employee_or_member_of    | Object: Netflix        
+Confidence: 0.5480  | Subject: she               | Relation: per:employee_or_member_of    | Object: Boston University
+Confidence: 0.5244  | Subject: Chaim Gartenberg   | Relation: per:employee_or_member_of    | Object: Linkedin Reddit
+Confidence: 0.5058  | Subject: Catherine Clifford Save   | Relation: per:employee_or_member_of    | Object: CNBC           
+Confidence: 0.4193  | Subject: Ketchum           | Relation: per:employee_or_member_of    | Object: Boston University
+Total Runtime: 10.7466463804245
+Num_Iterations: 1

@@ -12,12 +12,10 @@ import argparse
 from stanfordnlp.server import CoreNLPClient
 import time
 
-## Log output transcript by the timestamp when the program was run 
-FILETIME = str(time.time())
 
 ### Print output to a transcript file 
 def transcript(string):
-    with open(FILETIME + '.log', 'a+') as f:
+    with open('./transcripts/'+FILETIME + '.log', 'a+') as f:
         print(string)
         f.write(string+'\n')
 
@@ -227,8 +225,6 @@ THRESHOLD = float(sys.argv[4]) # extraction confidence threshold
 query = sys.argv[5] # seed query for relation to extract
 K = float(sys.argv[6]) # number of tuples requested in output
 
-visited_urls = set()
-
 ### Validate Input
 if not (1 <= RELATION <= 4 and RELATION.is_integer()):
     transcript('Incorrect value for R (Relation). \nUsage: python3 iterative_set_expansion.py <api-key> <engine-id> <relation> <threshold> <"query"> <k>')
@@ -246,11 +242,15 @@ if RELATION == 2: RELATION = "per:employee_or_member_of"
 if RELATION == 3: RELATION = "per:cities_of_residence"
 if RELATION == 4: RELATION = "org:top_members_employees"
 
+## Keep track of visited urls 
+visited_urls = set()
+
+## Log output transcript by the timestamp when the program was run 
+FILETIME = str(time.time())
+
 transcript('----\nParameters:\nClient key\t= <'+G_API_KEY+'>\nEngine key\t= <'+G_ENGINE_ID+'>')
 transcript('Relation\t= '+ RELATION+'\nThreshold\t= '+str(THRESHOLD)+'\nQuery\t\t= '+query+'\n# of Tuples\t= '+ str(K)+'\n')
 transcript('Loading necessary libraries; This should take a minute or so ... \n')
-
-
 
 
 
@@ -268,7 +268,4 @@ for x in X:
     obj = x[2]
     transcript("Confidence: " + "{:.4f}".format(conf) + "  | Subject: " + "{:<15}".format(sub) + '   | Relation: ' + "{:<15} ".format(rel) + '   | Object: ' + '{:<15}'.format(obj))
 transcript('Total Runtime: ' + str((end-start)/60))
-transcript('Num_Iterations: '+str(iterations))
-
-
-
+transcript('Num_Iterations: '+str(iterations+1))

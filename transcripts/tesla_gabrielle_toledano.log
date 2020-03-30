@@ -1,0 +1,337 @@
+----
+Parameters:
+Client key	= -----------------------------
+Engine key	= -----------------------------
+Relation	= org:top_members_employees
+Threshold	= 0.8
+Query		= tesla gabrielle toledano
+# of Tuples	= 10.0
+
+Loading necessary libraries; This should take a minute or so ... 
+
+=========== Iteration: 0 - Query: tesla gabrielle toledano =========== 
+URL (1 / 10): https://www.cnbc.com/2018/09/07/another-tesla-executive-leaves-this-time-its-hr-boss-gaby-toledano-report.html
+	Fetching text from url ...
+	Webpage length (num characters): 4419
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 21 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 21
+	Processed 4 / 21
+		=== Extracted Relation ===
+		Sentence:  Gabrielle Toledano Source : PR Newswire Tesla 's HR boss Gaby Toledano is extending the leave of absence she took last month , Tesla said in a blog post on Friday announcing several new promotions .
+		Confidence: 0.8624090200322779; Subject: PR Newswire Tesla; Relation: org:top_members_employees; Object: Gaby Toledano
+		Adding to set of extracted relations
+		==========================
+	Processed 8 / 21
+	Processed 14 / 21
+	Extracted kbp annotations for 1 out of total 21 sentences
+	Relations extracted from this website: 1  (Overall: 1)
+
+URL (2 / 10): https://www.linkedin.com/in/gabrielletoledano
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 20 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 20
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7711048192147224; Subject: Linkedin Reddit; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7163324891774111; Subject: Microsoft Tech; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.4250360491972335; Subject: Facebook Share; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.3912655707383697; Subject: Linkedin Reddit; Relation: org:top_members_employees; Object: Chaim Gartenberg
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5087681322269361; Subject: Facebook Share; Relation: org:top_members_employees; Object: Bill Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.9054536918591061; Subject: Netflix; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.9364789594249071; Subject: Microsoft Tech; Relation: org:top_members_employees; Object: Bill Gates
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.656231432628919; Subject: Netflix; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5095107355221159; Subject: Netflix; Relation: org:top_members_employees; Object: Chaim Gartenberg
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.7056521094649061; Subject: Microsoft Tech; Relation: org:top_members_employees; Object: Chaim Gartenberg
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Microsoft Tech Bill Gates steps down from Microsoft board New , 21 comments Gates will be focusing more on philanthropy By Chaim Gartenberg @cgartenberg Mar 13 , 2020 , 5:15 pm EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Bill Gates steps down from Microsoft board Linkedin Reddit Pocket Flipboard Email Photo by Saeed Adyani / Netflix Bill Gates , co-founder and former CEO of Microsoft , is stepping down from the board of the company .
+		Confidence: 0.5532458970609166; Subject: Linkedin Reddit; Relation: org:top_members_employees; Object: Saeed Adyani
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 3 / 20
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 0.6969606587632149; Subject: Melinda Gates Foundation; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates previously served as CEO of Microsoft until 2000 when he stepped down from the position in order to spend more time on the Bill and Melinda Gates Foundation .
+		Confidence: 1.0; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Adding to set of extracted relations
+		==========================
+	Processed 4 / 20
+	Processed 6 / 20
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9716771311775211; Subject: Microsoft; Relation: org:top_members_employees; Object: Nadella
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9964751948126889; Subject: Microsoft; Relation: org:top_members_employees; Object: Satya Nadella
+		Adding to set of extracted relations
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Gates will still serve as a `` technology advisor '' to current CEO Satya Nadella , a role he began in 2014 at Nadella 's request when he stepped down from serving as chairman of Microsoft 's board .
+		Confidence: 0.9974993938877263; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		==========================
+	Processed 9 / 20
+	Processed 11 / 20
+	Processed 13 / 20
+		=== Extracted Relation ===
+		Sentence:  While Gates will still be at least somewhat involved with the company he founded through his position as a technology advisor , the move marks the furthest step away from running Microsoft that Gates has taken yet since he gave up the role of CEO back in 2000 .
+		Confidence: 0.500945245878203; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 14 / 20
+		=== Extracted Relation ===
+		Sentence:  Correction : A previous version of this story said Gates stepped down as Microsoft CEO in 2008 .
+		Confidence: 0.7084969381929466; Subject: Microsoft; Relation: org:top_members_employees; Object: Gates
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 15 / 20
+	Extracted kbp annotations for 18 out of total 20 sentences
+	Relations extracted from this website: 5  (Overall: 18)
+
+URL (3 / 10): https://www.prnewswire.com/news-releases/namely-appoints-tesla-and-electronic-arts-veteran-gabrielle-toledano-to-its-board-of-directors-300789840.html
+	Fetching text from url ...
+	Webpage length (num characters): 20000
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 14 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 3 / 14
+	Processed 9 / 14
+	Processed 10 / 14
+		=== Extracted Relation ===
+		Sentence:  Preceding Tesla , Gabrielle was the Executive Vice President and Chief Talent Officer at Electronic Arts -LRB- EA -RRB- responsible for global human resources , facilities and corporate social responsibility .
+		Confidence: 0.940364042032509; Subject: EA; Relation: org:top_members_employees; Object: Gabrielle
+		Adding to set of extracted relations
+		==========================
+	Processed 11 / 14
+	Processed 12 / 14
+	Extracted kbp annotations for 1 out of total 14 sentences
+	Relations extracted from this website: 1  (Overall: 1)
+
+URL (4 / 10): https://www.crunchbase.com/person/gabrielle-toledano
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 31 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 31
+	Processed 3 / 31
+	Processed 6 / 31
+		=== Extracted Relation ===
+		Sentence:  Twitter has also hired Jennifer Christie , most recently a senior vice president of human resources at American Express , where Berland used to work .
+		Confidence: 1.0; Subject: American Express; Relation: org:top_members_employees; Object: Jennifer Christie
+		Adding to set of extracted relations
+		==========================
+	Processed 7 / 31
+	Processed 8 / 31
+		=== Extracted Relation ===
+		Sentence:  Twitter 's old VP of human resources , Brian `` Skip '' Schipper , announced he was leaving way back in January 2016 , the same day Twitter lost a number of other key VPs .
+		Confidence: 0.5762167671489518; Subject: Twitter; Relation: org:top_members_employees; Object: Brian
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 10 / 31
+	Processed 14 / 31
+	Processed 17 / 31
+	Processed 21 / 31
+	Processed 27 / 31
+	Processed 29 / 31
+	Extracted kbp annotations for 2 out of total 31 sentences
+	Relations extracted from this website: 1  (Overall: 2)
+
+URL (5 / 10): https://www.bloomberg.com/news/articles/2018-08-29/tesla-hr-chief-has-been-on-leave-of-absence-amid-musk-s-tumult
+	Fetching text from url ...
+	Webpage length (num characters): 562
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 8 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Extracted kbp annotations for 0 out of total 8 sentences
+	Relations extracted from this website: 0  (Overall: 0)
+
+URL (6 / 10): https://www.theverge.com/2018/9/7/17831204/tesla-accounting-hr-executives-resign
+	Fetching text from url ...
+	Webpage length (num characters): 10062
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 21 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 2 / 21
+		=== Extracted Relation ===
+		Sentence:  All Creators Entertainment Film TV Games Fortnite Game of Thrones Books Comics Music All Entertainment Video Features Podcasts Newsletters Store Filed under : Transportation Cars Tesla Tesla 's accounting and HR heads resign on the same day New , 25 comments The chief accounting officer had been with the company less than a month By Sean O'Kane @sokane1 Sep 7 , 2018 , 9:24 am EDT Share this story Share this on Facebook Share this on Twitter Share All sharing options Share All sharing options for : Tesla 's accounting and HR heads resign on the same day Linkedin Reddit Pocket Flipboard Email Illustration by Alex Castro / The Verge Tesla 's chief accounting officer , Dave Morton , has resigned after less than a month on the job , the company announced in a regulatory filing today .
+		Confidence: 1.0; Subject: Verge Tesla; Relation: org:top_members_employees; Object: Dave Morton
+		Adding to set of extracted relations
+		==========================
+	Processed 4 / 21
+	Processed 9 / 21
+		=== Extracted Relation ===
+		Sentence:  Morton joined Tesla one day before the `` funding secured '' tweet Morton came from a post as CFO of hard drive company Seagate and was in charge of Tesla 's corporate financial reporting and global accounting , payroll , tax , and trade activities , according to a company press release about his hiring .
+		Confidence: 0.4749428671526016; Subject: Seagate; Relation: org:top_members_employees; Object: Morton
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 12 / 21
+	Processed 14 / 21
+	Extracted kbp annotations for 2 out of total 21 sentences
+	Relations extracted from this website: 1  (Overall: 2)
+
+URL (7 / 10): https://www.businessinsider.com/tesla-hr-head-resigns-report-2018-9
+	Fetching text from url ...
+	Webpage length (num characters): 8820
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 66 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 14 / 66
+	Processed 41 / 66
+	Processed 44 / 66
+		=== Extracted Relation ===
+		Sentence:  Toledano 's departure is the third from a senior Tesla employee this week , following chief accountant Dave Morton , who resigned on Tuesday , and head of communications Sarah O'Brien , whose final day at the company is Friday , according to Bloomberg .
+		Confidence: 0.7285976602652318; Subject: Bloomberg; Relation: org:top_members_employees; Object: Toledano
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Toledano 's departure is the third from a senior Tesla employee this week , following chief accountant Dave Morton , who resigned on Tuesday , and head of communications Sarah O'Brien , whose final day at the company is Friday , according to Bloomberg .
+		Confidence: 0.577463149506127; Subject: Bloomberg; Relation: org:top_members_employees; Object: Dave Morton
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Toledano 's departure is the third from a senior Tesla employee this week , following chief accountant Dave Morton , who resigned on Tuesday , and head of communications Sarah O'Brien , whose final day at the company is Friday , according to Bloomberg .
+		Confidence: 0.5726559386308613; Subject: Bloomberg; Relation: org:top_members_employees; Object: Tesla
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 45 / 66
+	Processed 51 / 66
+		=== Extracted Relation ===
+		Sentence:  Toledano 's departure is the third from a senior Tesla employee this week , following chief accountant Dave Morton , who resigned on Tuesday , and head of communications Sarah O'Brien , whose final day at the company is Friday , according to Bloomberg .
+		Confidence: 0.7285976602652318; Subject: Bloomberg; Relation: org:top_members_employees; Object: Toledano
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Toledano 's departure is the third from a senior Tesla employee this week , following chief accountant Dave Morton , who resigned on Tuesday , and head of communications Sarah O'Brien , whose final day at the company is Friday , according to Bloomberg .
+		Confidence: 0.577463149506127; Subject: Bloomberg; Relation: org:top_members_employees; Object: Dave Morton
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+		=== Extracted Relation ===
+		Sentence:  Toledano 's departure is the third from a senior Tesla employee this week , following chief accountant Dave Morton , who resigned on Tuesday , and head of communications Sarah O'Brien , whose final day at the company is Friday , according to Bloomberg .
+		Confidence: 0.5726559386308613; Subject: Bloomberg; Relation: org:top_members_employees; Object: Tesla
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 61 / 66
+	Extracted kbp annotations for 6 out of total 66 sentences
+	Relations extracted from this website: 0  (Overall: 6)
+
+URL (8 / 10): https://www.businesswire.com/news/home/20171204005117/en/Glu-Adds-Tesla%E2%80%99s-Chief-People-Officer-Gabrielle
+	Fetching text from url ...
+	Webpage length (num characters): 7121
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 30 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 30
+	Processed 2 / 30
+	Processed 4 / 30
+		=== Extracted Relation ===
+		Sentence:  `` Gaby has a proven track record attracting exceptional talent to support growth in scaled and pioneering public companies , '' said Niccolo de Masi , Glu Executive Chairman .
+		Confidence: 0.9087554479952981; Subject: Glu; Relation: org:top_members_employees; Object: Niccolo de Masi
+		Adding to set of extracted relations
+		==========================
+	Processed 6 / 30
+		=== Extracted Relation ===
+		Sentence:  `` Having witnessed her tremendous leadership capabilities first-hand during my time at EA , I am thrilled to welcome Gaby to Glu 's Board of Directors , '' said Nick Earl , Glu 's President and CEO .
+		Confidence: 1.0; Subject: Glu; Relation: org:top_members_employees; Object: Nick Earl
+		Adding to set of extracted relations
+		==========================
+	Processed 11 / 30
+		=== Extracted Relation ===
+		Sentence:  Gabrielle Toledano currently serves as Chief People Officer of Tesla , Inc. where she leads several functions including human resources , facilities , security and environment , health and safety .
+		Confidence: 1.0; Subject: Tesla , Inc.; Relation: org:top_members_employees; Object: Gabrielle Toledano
+		Adding to set of extracted relations
+		==========================
+	Processed 13 / 30
+	Processed 15 / 30
+		=== Extracted Relation ===
+		Sentence:  Cautions Regarding Forward-Looking Statements This press release contains certain `` forward-looking statements '' related to the business of Glu Mobile Inc. , including statements that Ms. Toledano is uniquely positioned to offer world-class leadership as Glu continues to evolve its talent and growth strategies ; that Glu expects that her experience in both gaming and technology will provide tremendous value to Glu and its Board of Directors ; and that Glu looks forward to tapping into Ms. Toledano 's experience and commitment to innovation as Glu continues to move towards building a successful future driven by creativity .
+		Confidence: 0.7756009988417464; Subject: Glu; Relation: org:top_members_employees; Object: Toledano
+		Confidence is lower than threshold confidence. Ignoring this.
+		==========================
+	Processed 16 / 30
+	Processed 20 / 30
+	Processed 26 / 30
+	Processed 27 / 30
+	Extracted kbp annotations for 4 out of total 30 sentences
+	Relations extracted from this website: 3  (Overall: 4)
+
+URL (9 / 10): https://www.keystonestrategy.com/people/gabrielle-gaby-toledano/
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 17 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 17
+	Processed 3 / 17
+	Processed 6 / 17
+	Processed 12 / 17
+	Extracted kbp annotations for 0 out of total 17 sentences
+	Relations extracted from this website: 0  (Overall: 0)
+
+URL (10 / 10): https://www.investopedia.com/news/bad-week-tesla-just-got-worse/
+	Fetching text from url ...
+	Webpage length (num characters): 9803
+	Annotating the webpage using [tokenize, ssplit, pos, lemma, ner] annotators ...
+	Extracted 45 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 1 / 45
+	Processed 11 / 45
+	Processed 16 / 45
+	Processed 17 / 45
+	Processed 19 / 45
+	Processed 27 / 45
+	Processed 29 / 45
+	Processed 31 / 45
+	Processed 37 / 45
+	Processed 44 / 45
+	Extracted kbp annotations for 0 out of total 45 sentences
+	Relations extracted from this website: 0  (Overall: 0)
+
+
+
+================== ALL RELATIONS (12) ==================
+Confidence: 1.0000  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Gates          
+Confidence: 1.0000  | Subject: American Express   | Relation: org:top_members_employees    | Object: Jennifer Christie
+Confidence: 1.0000  | Subject: Verge Tesla       | Relation: org:top_members_employees    | Object: Dave Morton    
+Confidence: 1.0000  | Subject: Glu               | Relation: org:top_members_employees    | Object: Nick Earl      
+Confidence: 1.0000  | Subject: Tesla , Inc.      | Relation: org:top_members_employees    | Object: Gabrielle Toledano
+Confidence: 0.9965  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Satya Nadella  
+Confidence: 0.9717  | Subject: Microsoft         | Relation: org:top_members_employees    | Object: Nadella        
+Confidence: 0.9404  | Subject: EA                | Relation: org:top_members_employees    | Object: Gabrielle      
+Confidence: 0.9365  | Subject: Microsoft Tech    | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.9088  | Subject: Glu               | Relation: org:top_members_employees    | Object: Niccolo de Masi
+Confidence: 0.9055  | Subject: Netflix           | Relation: org:top_members_employees    | Object: Bill Gates     
+Confidence: 0.8624  | Subject: PR Newswire Tesla   | Relation: org:top_members_employees    | Object: Gaby Toledano  
+Total Runtime: 15.2708611369133
+Num_Iterations: 1
